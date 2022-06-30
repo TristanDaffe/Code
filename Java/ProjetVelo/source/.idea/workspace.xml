@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bb45c595-f9d1-4408-af0e-9a4229d68ba5" name="Changes" comment="ViewPackage - showException - change type JOptionPane">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/AccessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/AddException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/DeleteUserException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/GetException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/InvalidSubscriptionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/IsHiringException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/IsNotHiringBike.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/NoBikeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/NoHistoryBikeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/NullFieldException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/UpdateFielExcpetion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/UpdateUserProfilException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/UserConnectionException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/UserRegisterException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/AllUserModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/BikeHireModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/BikeHistoryModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/BikeLogo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/BikeTypeModifModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeSubPanel$ButtonsPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeSubPanel$SelectForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeSubPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeUserInfoPanel$ButtonsPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeUserInfoPanel$ConnectionButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeUserInfoPanel$FormPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeUserInfoPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectedPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectionPanel$ButtonsPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectionPanel$ConnectionButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectionPanel$FormPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectionPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/DeleteUserPanel$ButtonForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/DeleteUserPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HireBikePanel$ButtonForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HireBikePanel$HireForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HireBikePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HiringBikePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HomePagePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/MainWindow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/MainWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/RegisterPanel$ButtonsPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/RegisterPanel$ConnectionButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/RegisterPanel$FormPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/RegisterPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ReturnBikePanel$ButtonForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ReturnBikePanel$ReturnFrom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ReturnBikePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ReturnedBikePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikeHistory$ButtonForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikeHistory$SearchButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikeHistory$SelectForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikeHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel$ButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel$FormPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel$ResultPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel$SearchButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchModifOnBikeType$ButtonForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchModifOnBikeType$SearchButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchModifOnBikeType$SelectForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchModifOnBikeType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/UserProfilePanel$HiringStat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/UserProfilePanel$ProfilForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/UserProfilePanel$StationForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/UserProfilePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ViewUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/bikeLogoThread.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27YQS9yTHYgzoz5TAPN2KCO15wr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path": "D:\\TheStartOfEverything\\cours\\Git\\ProjetJava\\source\\library",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowBuild.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "/media/seurya/Fichier/TheStartOfEverything/cours/Git/ProjetJava/source",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="exceptionPackage" />
+      <recent name="viewPackage" />
+      <recent name="modelPackage" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\TheStartOfEverything\cours\Git\ProjetJava\source\src\image\gif" />
+      <recent name="D:\TheStartOfEverything\cours\Git\ProjetJava\source\src\image\logo" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProjetJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProjetJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjetJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.setEmailAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProjetJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.UserTest" />
+      <option name="METHOD_NAME" value="setEmailAddress" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserTest.setEmailAddress" />
+        <item itemvalue="JUnit.UserTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb45c595-f9d1-4408-af0e-9a4229d68ba5" name="Changes" comment="" />
+      <created>1649494540910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649494540910</updated>
+      <workItem from="1649494543367" duration="273000" />
+      <workItem from="1649593119626" duration="72000" />
+      <workItem from="1649596745548" duration="279000" />
+      <workItem from="1649599500167" duration="91000" />
+      <workItem from="1649853941002" duration="2014000" />
+      <workItem from="1649856978542" duration="31000" />
+      <workItem from="1649861801485" duration="568000" />
+      <workItem from="1649939106798" duration="1128000" />
+      <workItem from="1649941908636" duration="113000" />
+      <workItem from="1650025785896" duration="185000" />
+      <workItem from="1650110330933" duration="14666000" />
+      <workItem from="1650224044262" duration="138000" />
+      <workItem from="1650272126731" duration="508000" />
+      <workItem from="1650274290194" duration="311000" />
+      <workItem from="1650367179096" duration="77000" />
+      <workItem from="1650370403063" duration="196000" />
+      <workItem from="1650383151206" duration="773000" />
+      <workItem from="1650438980773" duration="1526000" />
+      <workItem from="1650440563758" duration="173000" />
+      <workItem from="1650463780875" duration="2069000" />
+      <workItem from="1650465879574" duration="1545000" />
+      <workItem from="1650467590633" duration="64000" />
+      <workItem from="1650467714433" duration="4496000" />
+      <workItem from="1650609085519" duration="171000" />
+      <workItem from="1650610647205" duration="1021000" />
+      <workItem from="1650611968971" duration="557000" />
+      <workItem from="1650614075652" duration="1215000" />
+      <workItem from="1650630910993" duration="3658000" />
+      <workItem from="1650634603883" duration="4991000" />
+      <workItem from="1650813115626" duration="171000" />
+      <workItem from="1650891612298" duration="10354000" />
+      <workItem from="1650976581959" duration="12642000" />
+      <workItem from="1651043178907" duration="81000" />
+      <workItem from="1651044886474" duration="685000" />
+      <workItem from="1651048724880" duration="828000" />
+      <workItem from="1651054212323" duration="1129000" />
+      <workItem from="1651063344800" duration="1662000" />
+      <workItem from="1651143158423" duration="347000" />
+      <workItem from="1651232646862" duration="4047000" />
+      <workItem from="1651405673654" duration="1296000" />
+      <workItem from="1651415798625" duration="129000" />
+      <workItem from="1651562007004" duration="36000" />
+      <workItem from="1651563524655" duration="127000" />
+      <workItem from="1651563799099" duration="33000" />
+      <workItem from="1651674195864" duration="3900000" />
+      <workItem from="1651746360851" duration="86000" />
+      <workItem from="1651749186974" duration="4113000" />
+      <workItem from="1651761924954" duration="361000" />
+      <workItem from="1651762540876" duration="1283000" />
+      <workItem from="1651766267389" duration="3956000" />
+      <workItem from="1651820817484" duration="645000" />
+      <workItem from="1651835678678" duration="5883000" />
+      <workItem from="1651921309890" duration="3839000" />
+      <workItem from="1651998391745" duration="5882000" />
+      <workItem from="1652021373193" duration="135000" />
+      <workItem from="1652098100546" duration="69000" />
+      <workItem from="1652098231179" duration="111000" />
+      <workItem from="1652170897420" duration="207000" />
+      <workItem from="1652173800759" duration="182000" />
+      <workItem from="1652195954735" duration="502000" />
+      <workItem from="1652269373570" duration="82000" />
+      <workItem from="1652352919760" duration="549000" />
+      <workItem from="1652426239775" duration="1041000" />
+      <workItem from="1652427508175" duration="10853000" />
+      <workItem from="1652441863327" duration="13483000" />
+      <workItem from="1652456478616" duration="4713000" />
+      <workItem from="1652464693162" duration="11113000" />
+      <workItem from="1652518698120" duration="27244000" />
+      <workItem from="1652605258642" duration="5735000" />
+      <workItem from="1652614440205" duration="16000" />
+      <workItem from="1652614576389" duration="11601000" />
+      <workItem from="1652689522997" duration="17556000" />
+      <workItem from="1652769098327" duration="337000" />
+      <workItem from="1652769737704" duration="27000" />
+      <workItem from="1652771720644" duration="317000" />
+      <workItem from="1652780749327" duration="357000" />
+      <workItem from="1652785954570" duration="585000" />
+      <workItem from="1652786653982" duration="5775000" />
+      <workItem from="1652798685025" duration="32000" />
+      <workItem from="1652798730727" duration="709000" />
+      <workItem from="1652861671610" duration="1098000" />
+      <workItem from="1652870299277" duration="2642000" />
+      <workItem from="1652959042881" duration="168000" />
+      <workItem from="1652962919523" duration="676000" />
+      <workItem from="1652964035861" duration="297000" />
+      <workItem from="1652974714146" duration="3091000" />
+      <workItem from="1653054115651" duration="3064000" />
+      <workItem from="1653057923585" duration="52000" />
+      <workItem from="1653057989136" duration="62000" />
+      <workItem from="1653058261397" duration="24000" />
+      <workItem from="1653061571421" duration="1869000" />
+      <workItem from="1653063704367" duration="223000" />
+      <workItem from="1653067248659" duration="664000" />
+      <workItem from="1653137385728" duration="10326000" />
+      <workItem from="1653164638097" duration="64000" />
+      <workItem from="1653246222640" duration="2653000" />
+      <workItem from="1653298662219" duration="60000" />
+      <workItem from="1653986939085" duration="1716000" />
+      <workItem from="1653995854648" duration="359000" />
+      <workItem from="1655127672086" duration="156000" />
+      <workItem from="1655187994904" duration="3517000" />
+      <workItem from="1655225126318" duration="14000" />
+      <workItem from="1656278364126" duration="110000" />
+    </task>
+    <task id="LOCAL-00001" summary="Bike - start">
+      <created>1649597011511</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649597011512</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ViewPackage - JTableModel">
+      <created>1652799378054</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652799378055</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ViewPackage - JTableModel">
+      <created>1652799420100</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652799420100</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ViewPackage - showException - change type JOptionPane">
+      <created>1653149012406</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653149012406</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.name" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Bike - start" />
+    <MESSAGE value="ViewPackage - JTableModel" />
+    <MESSAGE value="ViewPackage - showException - change type JOptionPane" />
+    <option name="LAST_COMMIT_MESSAGE" value="ViewPackage - showException - change type JOptionPane" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,162 @@
+NB_MAX_CLASSES 20
+
+module(displayConfusionMatrice; realClasses[], estimatedClasses[], nbTests;)
+---*
+module(maxMovement; realClasses[], estimatedClasses[], nbTests; maxClasses)
+module(createMatrix; realClasses[], extimatedClasses[], nbTestsn, maxClasses; matrix[])
+
+module(displayRowMatrix; matrix[0]], NULL;)
+i = 1
+while (i < NB_MAX_CLASSES AND i < nbClasses)
+ // sort le type du mouvement
+ sortir mouvement +'\t'
+ i = 0
+ while (i < NB_MAX_CLASSES && ligne[i] != NULL)
+ // sort le nombres d'hestimation 
+ sortir ligne[i] + '\t'
+endwhile
+endwhile
+------
+
+module(createMatrix; realClasses[], estimatedClasses[], nbTests, nbClasses; matrix[], )
+---*
+matrix[][] = new ARRAY( nbClasses)( nbClasses)
+// titre mouvement
+iTitre = 0
+while (iTitre < nbClasses)
+ matrix[0][iTitre] = iTitre +1
+endwhile
+// init matrix full à 0
+i = 1
+while ( i < nbClasses)
+ matrix[i][0] = i
+ j = 1
+ while (j < nbClasses)
+   matrix[i][j] = 0
+ endwhile
+endwhile
+i = 0
+while (i < nbTest)
+ matrix[realClasses[i] -1][extimatedClasses[i] -1]++
+endwhile
+
+------
+
+module(maxMovement; realClasses[], estimatedClasses[], nbTests; maxClasses)
+---*
+maxClasses = 0
+i = 0
+while (i < nbTests)
+ if ( realClasses[i] > maxClasses OR estimatedClasses[i] > maxClasses )
+  maxClasses =  realClasses[i] > estimatedClasses[i] ? realClasses[i] : estimatedClasses[i]
+ endif
+ i++
+endwhile
+------
+
+.============================================================================================.
+module(displayAccuracy;realClasses[],estimatedClasses[],nbTests;)
+---*
+NB_CLASSES = 6
+
+// boucler sur les deux tableaux en incrémentant le total et potentiellement totalCorrect
+module(countTotCorrect;realClasses[],estimatedClasses[],nbTest;totalCorrect, total)
+
+// calculer et sortir l'accuracy
+accuracy = totalCorrect/total100
+sortir "L'accuracy est de " + accuracy + "%"
+------
+
+module(countTotCorrect;realClasses[],estimatedClasses[],nbTest;totalCorrect, total)
+---*
+totalCorrect = 0
+total = 0
+i = 0
+while (i < nbTest)
+if (realClasses[i] == estimatedClasses[i])
+totalCorrect++
+endif
+total++
+i++
+endwhile
+------
+
+.====================================================================================================.
+module(displayResultsByClass;realClasses[],estimatedClasses[],nbTests);)
+---*
+NB_CLASSES = 6
+
+// creation d'un tableau de structures de NB_CLASSES cellules (ici 6)
+classes[] = new ARRAY (NB_CLASSES)
+movement { number
+.        { totalCorrect = 0
+.        { total = 0
+
+iClasses = 0
+while (iClasses < NB_CLASSES)
+classes[iClasses].number = iClasses+1
+iClasses++
+endwhile
+
+// parcourir et comparer les deux tableaux realClasses et estimatedClasses
+module(countResult;realClasses[],estimatedClasses[], classes, nbTest;classes[])
+
+// afficher resultByCLass
+module(displayRow;classes, NB_CLASSES;)
+------
+
+module(countResult;realClasses[],estimatedClasses[], classes, nbTest;classes[])
+---*
+i = 0
+while(i < nbTest)
+iClasses = realClasses[i]-1
+if (realClasses[i] == estimatedClasses[i])
+classes[iClasses].totalCorrect++
+endif
+classes[iClasses].total++
+i++
+endwhile
+------
+
+module(displayRow;classes, NB_CLASSES;)
+---*
+sortir "classe   |   bien classes   |   total   |   Pourcentage\n"
+iClasses = 0
+while (iClasses < NB_CLASSES)
+if (classes[iClasses].total != 0)
+sortir classes[iClasses].number + "   |   "
+sortir classes[iClasses].totalCorrect + "   |   "
+sortir classes[iClasses].total + "   |   "
+pourcentage = classes[iClasses].totalCorrect / classes[iClasses].total*100
+sortir pourcentage +  "%\n"
+endif
+i++
+endwhile
+------
+
+
+module(displayAccuracy;realClasses[],estimatedClasses[],nbTests;)
+---*
+NB_CLASSES = 6
+
+// boucler sur les deux tableaux en incrÃ©mentant le total et potentiellement totalCorrect
+module(countTotCorrect;realClasses[],estimatedClasses[],nbTest;totalCorrect, total)
+
+// calculer et sortir l'accuracy
+accuracy = totalCorrect/total*100
+sortir "L'accuracy est de " + accuracy + "%"
+------
+
+module(countTotCorrect;realClasses[],estimatedClasses[],nbTest;totalCorrect, total)
+---*
+totalCorrect = 0
+total = 0
+i = 0
+while (i < nbTest)
+if (realClasses[i] == estimatedClasses[i])
+totalCorrect++
+endif
+total++
+i++
+endwhile
+------

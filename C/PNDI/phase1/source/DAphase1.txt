@@ -1,0 +1,168 @@
+// structures
+data  { userAcceleration.x
+.     { userAcceleration.y
+.     { userAcceleration.z
+
+sujet { code
+.     { gender
+
+PATH = {
+"dws_1/","dws_2/","dws_11/",
+"jog_9/", "jog_16/", 
+"sit_5/", "sit_13/",
+"std_6/", "std_14/",
+"ups_3/", "ups_4/",
+"wlk_7/", "wlk_8/", "wlk_15/",
+}
+
+DATA_SUBJECT "../data/data_subjects_info.csv"
+DATA "../data/A_DeviceMotion_data/A_DeviceMotion_data/"
+TRAIN_SET "../trainSet.csv"
+TEST_SET "../testSet.csv"
+
+NB_SUJETS 24
+NB_FORLDER 15
+NB_SUJET_TEST 3
+TIME_ONE_MINUTE 600
+
+module(Principal;;)
+---*
+subjects = new Array(NB_SUBJECTS)
+ouvrir DATA_SUBJECT dans dataSubject
+
+if (dataSubject == null)
+ sortir "erreur ouverture du fichier"
+else
+// retire les titres de colonne
+fgets(trash, sizeof(trash), dataSubject);
+
+// lit les info des Subject et les sauvegarde
+i = 0
+while( i < NB_Subject)
+ subjects[i] = readSubject(dataSubject);
+i++
+endwhile
+
+ouvrir TRAIN_SET dans trainSet
+ouvrir TEST_SET dans testSet
+if (trainSet == null OR testSet == null)
+ sortir "erreur création des fichiers"
+else
+ // ecrit 
+fprintf(trainSet, "%s; %s; %s", "mouvement", "gender", "index");
+fprintf(testSet, "%s; %s; %s", "mouvement", "gender", "index");
+
+writeTilteVacc(trainSet);
+writeTilteVacc(testSet);
+
+index = 1
+//permet la repartition entre trainSet et testSet (+- 90 - 10 %)
+iSubjectForTest = 0;
+
+iFolder = 0
+while (i Folder < NB_FOLDER)
+ folder = DATA + PATH[iFolder]
+ module(defineMovement; PATH[iFolder]; movement)
+
+ nbTestSubjects = 0
+ iSubjects = 0
+while (iSubject < NB_SUBJECTS)
+if (nbTestSubjects < NB_TEST_SUBJECTS && iSubject == iSubjectForTest + nbTestSubjects) 
+fileToWrite = testSet;
+nbTestSubjects++;
+else
+fileToWrite = trainSet;
+endif
+//passe a la ligne pour le Subject
+fprintf(fileToWrite, "%s", "\n");
+
+//ecrit le type de mouvement
+fprintf(fileToWrite, "%s;", mouvement);
+
+//colonne genre
+fprintf(fileToWrite, "%d;", subjects[iSubject].gender);
+//colonne index
+fprintf(fileToWrite, "%d;", index);
+
+sprintf_s(code, sizeof(code), "%d", subjects[iSubject].code);
+pathDataFile = folder + "sub_" + code + ".csv"
+
+ouvrir pathDataFile dans dataFile
+
+if (dataFile == null)
+sortir "erreur création fichier"
+else
+ i = 0
+ module(readDataBase; dataFile; data)
+while (i < TIME_ONE_MINUTE AND !feof(dataFile))
+ Vacc = sqrt(data.userAccX * data.userAccX + data.userAccY * data.userAccY + data.userAccZ * data.userAccZ);
+ fprintf(fileToWrite, "%lf;", Vacc);
+ data = readDataBase(dataFile);
+ i++;
+endwhile
+fermer dataFile;
+iSubject++;
+index++;
+endif
+endwhile
+iSubjectForTest += 3;
+if (iSubjectForTest >= NB_SUBJECTS)
+iSubjectForTest = 0;
+endif
+iFolder++;
+endwhile
+fermer trainSet;
+fermer testSet;
+endif
+fermer dataSubject;
+endif
+
+------
+
+module(readSubject; file; subject)
+---*
+// lis les infos du sujet
+
+line[100];
+trash;
+fgets(line, sizeof(line), file);
+
+sscanf_s(line, "%d; %d; %d; %d; %d", &subject.code, &trash, &trash, &trash, &subject.gender);
+------
+
+module(readDataBase; file; data)
+---*
+// retire les titres de colonne  
+fgets(line, sizeof(line), file);
+// lit dans le file
+fgets(line, sizeof(line), file);
+
+sscanf_s(line, "%lf, %lf, %lf, %lf, %lf, %lf, %lf, %lf, %lf, %lf, %lf, %lf, %lf", &trash, &trash, &trash, &trash, &trash, &trash, &trash, &trash, &trash, &trash, &data.userAccX, &data.userAccY, &data.userAccZ);    
+------
+
+module(writeTitleVacc; file;)
+---*
+// écrit 600 titres "Vacc"
+i = 0
+while(i < TIME_FOR_A_MIN)
+ fprintf(file, "; %s", "Vacc");
+ i++
+endwhile
+------
+
+module(defineMovement; typeMovement; movement)
+---*
+if (typeMovement == "dws")
+movement = "downstair"
+elseif (typeMovement == "jog")
+movement = "jogging"
+elseif (typeMovement == "sit")
+movement = "sit down"
+elseif (typeMovement == "std")
+movement = "stand up"
+elseif (typeMovement == "ups")
+movement = "upstair"
+elseif (typeMovement == "wlk")
+movement = "walking"
+endif
+------

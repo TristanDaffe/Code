@@ -1,0 +1,99 @@
+trainSetPAth = "../../phase 1/trainSet.csv"
+fiModelPath= "../fiModel.csv"
+
+ecart type = moyenne des carrés - carré des moyennes
+
+//structures
+dataDixiemeSeconde {
+.    totVacc
+.    totCarreVacc
+.    totLigne
+}
+
+module(Principal; trainsetPath;)
+---*
+ouvrir traineSet.csv en lecture
+cree fiModel.csv
+
+if(trainSet == NULL || fiModel == NULL
+ sortir "erreur ouverture des fichiers"
+else
+module(initFiModel; fiModel;)
+
+// parcours du fichier complet
+while( !feof(trainset))
+module(initDatas;; datas)
+totGenerale = 0
+nbTot = 0
+line = lire ligne dans trainSet
+currentmovement= lire "mouvement" dans line 
+movement = currentmovement
+while( movement == currentMovemet AND !feof(trainSet))
+ passer "index" dans line
+ passer "genre" dans line
+ iColonne = 0
+// parcours de chaque colonne de dixieme de seconde
+ vacc = lire "Vacc" dans case 
+ while( vacc != null)
+// structure
+  datas[iColonne].totVacc += vacc
+  datas[iColonne].totCarreVacc += vacc * vacc
+  datas[iColonne].totLigne++
+// moyenne generale
+  totGenerale += vacc
+  nbTot++
+// dixieme de seconde suivant
+  iColonne++
+  vacc = lire "Vacc" dans case 
+ endwhile
+ line = lire ligne dans trainSet
+ currentmovement= lire "mouvement" dans line 
+endwhile
+ module(writeData; fiModel, data[], totVacc, nbVacc;) 
+endwhile
+ fermer trainSet
+ fermer fiModel
+endif
+------
+module(initFiModel; fiModel;)
+---*
+ecrire mouvement dans foModel
+i = 0
+while(i < 600)
+ ecrire "Vacc" dans fiModel
+endwhile
+------
+
+module(initDatas;; datas)
+---*
+datas= ARRAY(600)
+i = 0 
+while (i < 600)
+datas[i].totVacc = 0
+datas[i].totCarreVacc = 0
+datas[i].totLigne = 0
+i++
+endwhile
+------
+
+module(writeData; file, data[], totVacc, nbVacc;)
+---*
+ i = 0
+// écrit la moyennes
+ ecrire \n dans file
+ ecrire mouvement dans file
+ while( i < 600 &&  datasDixiemeSeconde[i].totVacc != null)
+  ecrire datasDixiemeSeconde[i].totVacc / datasDixiemeSeconde[i].totLigne dans file
+ endwhile
+// écrit la ecart types
+ ecrire \n dans file
+ ecrire mouvement dans file
+ i = 0
+ while( i < 600 &&  datasDixiemeSeconde[i].totCarreVacc!= null)
+  ecrire datasDixiemeSeconde[i].totCarreVacc / datasDixiemeSeconde[i].totLigne - datasDixiemeSeconde[i].totVacc / datasDixiemeSeconde[i].totLigne dans file
+ endwhile
+// écrit moyennes générale
+  ecrire \n dans file
+  ecrire mouvement dans file
+  ecrire totGenerale / nbTot dans file
+------

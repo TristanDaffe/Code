@@ -1,0 +1,199 @@
+struct model {
+	type
+	averages[TIME_ONE_MINUTE ]
+	nbValues
+	stds[TIME_ONE_MINUTE ]
+	globalAvg
+}
+
+TIME_ONE_MINUTE 600
+NB_TESTS 1000
+NB_MOVEMENTS 6
+
+FIMODEL_PATH "../../phase3/fimodel.csv"
+TEST_SET_PATH "../../phase1/testSet.csv"
+
+module(MonModule;;)
+---*
+ouvrir fiModel en lecture
+ouvrir testSet en lecture
+
+
+realClasses = new array(NB_TESTS)
+estimatedClasses= new array(NB_TESTS)
+// module pour lire fiModel et stocker dans models
+module(readModel; fiModel; models)
+
+// supprime la lignes de titres
+line = lire ligne dans testSet
+int i = 0
+ while (i < NB_TESTS && !feof(trainSet))
+ line = lire ligne dans testSet
+ module(decomposition; line; data, movementType)
+ realClasses[i] = movementType
+
+ // estimation sur la moyenne
+ module(EstimationAverage; models, data; movementUsingAverage)
+ // estimation sur l'écartType
+  module(EstimationStandartDeviation; models, data; movementUsingStandartDeviation)
+ // estimation sur la moyenne generale
+ module(EstimationUsingGeneralAverage; models, data; movementUsingGeneralAverage)
+ module(identifyMovement; movementUsingAverage, movementUsingStandartDeviation, movementUsingGeneralAverage; movement)
+ 
+// enregistre l'estimation dans estimatedClasses
+ estimatedClasses[i] = movement
+i++
+endwhile
+
+// affichage
+displayResultsForEachClass(realClasses, estimatedClasses, i) 
+displayAccuracy(realClasses, estimatedClasses, i)
+displayClass(realClasses, estimatedClasses, i)
+
+
+fermer fiModel
+fermer testSet
+------
+
+module(identifyMovement; movementUsingAverage, movementUsingStandartDeviation, movementUsingGeneralAverage; movement)
+---*
+// regarde si movementUsingStandartDeviation même que un autre
+if( movementUsingAverage == movementUsingStandartDeviation || movementUsingStandartDeviation == movementUsingGeneralAverage)
+ movement = movementUsingGeneralAverage
+else
+// pas de check d'égalité entre movementUsingAverage et movementUsingGeneralAverage 
+// car prendra la valeur de movementUsingAverage dans les 2 cas
+
+// cas de base => movementUsingAverage
+ movement = movementUsingAverage
+endif
+------
+
+module(decomposition; line; data, movementType)
+---*
+data = new array(NB_TESTS)
+// recupere le mouvement
+token = strtok(line, ";")
+movementType = token
+
+// passe index et genre
+token = strtok(NULL, ";")
+token = strtok(NULL, ";")
+
+// prend la premiere valeur de Vacc
+token = strtok(NULL, ";")
+i = 0
+while (token != NULL)
+data[i] = token
+token = strtok(NULL, ";")
+i++
+endwhile
+------
+
+module(readModel; file; models)
+---*
+models = new array(NB_TESTS)
+
+// supprime la ligne des titres
+line = lire ligne dans file
+i = 0
+while (!feof(file))
+// récupere le mouvement
+ line = lire ligne dans file
+ token = strtok(line, ";")
+ models[i].type = token
+// récupère les vacc moyennes
+ iVacc = 0
+ while(iVacc < TIME_ONE_MINUTE)
+  token = strtok(line, ";")
+  models[i].avergages[iVacc] = token
+  iVacc++
+ endwhile
+ models[i].nbValues = iVacc
+
+// récupère les vacc écarts types
+ line = lire ligne dans file
+ iVacc = 0
+ while(iVacc < TIME_ONE_MINUTE)
+  token = strtok(line, ";")
+  models[i].stds[iVacc] = token
+  iVacc++
+ endwhile
+// récupère la Vacc moyenne générale
+  line = lire ligne dans file
+  token = strtok(line, ";")
+  models[i].globalAvg = token
+ i++
+endwhile
+------
+
+// 3 modules d'estimation 
+module(EstimationAverage; models[], data[]; movementUsingAverage)
+---*
+standartDevMin = MAX_VALUE
+iMovement = 0
+// boucle pour calculer la distance min
+while (iMovement < NB_MOVEMENTS)
+ standartDev = 0
+  i = 0
+// calcul la distance euclidienne 
+  while (i < TIME_ONE_MINUTE)
+   standartDev += pow((models[iMovement].averages[i] - data[i]), 2)
+   i++
+  endwhile
+  standartDev = sqrt(standartDev)
+// regarde si la distance est la plus petite trouvée jusqu'à présent
+  if( standartDev < standartDevMin )
+   movementUsingAverage= iMovement
+   standartDevMin = standartDev
+  endif 
+ iMovement++
+endwhile
+------
+
+module(EstimationStandartDeviation; models[], data[]; movementUsingStandartDeviation)
+---*
+standartDevMin = MAX_VALUE
+iMovement = 0
+// boucle pour calculer la distance min
+while (iMovement < NB_MOVEMENTS)
+ standartDev = 0
+  i = 0
+// calcul la distance euclidienne 
+  while (i < TIME_ONE_MINUTE)
+   standartDev += pow((models[iMovement].stds[i] - data[i]), 2)
+   i++
+  endwhile
+  standartDev = sqrt(standartDev)
+// regarde si la distance est la plus petite trouvée jusqu'à présent
+  if( standartDev < standartDevMin )
+   movementUsingStandartDeviation = iMovement
+   standartDevMin = standartDev
+  endif 
+ iMovement++
+endwhile
+------
+
+module(EstimationUsingGeneralAverage; models[], data[]; movementUsingGeneralAverage)
+---*
+// calcule de la moyenne des data
+vaccTot = 0
+nbVacc = 0
+i = 0
+while (i < TIME_ONE_MINUTE)
+ vaccTot += data[i]
+ nbVacc++
+ i++
+endwhile
+vaccMiddle = vaccTot / nbVacc
+diffMin = MAX_VALUE
+i = 0
+while (i < NB_MOVEMENTS)
+ diff = abs(models[i].globalAvg - vaccMiddle)
+ if(diff < diffMin)
+  diffMin = diff
+  movementUsingGeneralAverage = i
+ endif
+ i++
+endwhile
+------
