@@ -19,7 +19,8 @@ namespace Labo2 {
             joe.Login = "fart";
             Console.WriteLine(joe);
 
-            User m = new User("Cunégonde", "motdepasse"); string nom = m.Login; m.Login = "Hubert"; m.Login += "ine";
+            User m = new User("Cunégonde", "motdepasse"); 
+            string nom = m.Login; m.Login = "Hubert"; m.Login += "ine";
             Console.Write(m);
 
             joe.JoinDate = 20220601;
