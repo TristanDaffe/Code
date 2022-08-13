@@ -1,0 +1,14 @@
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\bin\Debug\netcoreapp3.1\Labo1.exe
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\bin\Debug\netcoreapp3.1\Labo1.deps.json
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\bin\Debug\netcoreapp3.1\Labo1.runtimeconfig.json
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\bin\Debug\netcoreapp3.1\Labo1.runtimeconfig.dev.json
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\bin\Debug\netcoreapp3.1\Labo1.dll
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\bin\Debug\netcoreapp3.1\Labo1.pdb
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\obj\Debug\netcoreapp3.1\Labo1.csproj.AssemblyReference.cache
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\obj\Debug\netcoreapp3.1\Labo1.GeneratedMSBuildEditorConfig.editorconfig
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\obj\Debug\netcoreapp3.1\Labo1.AssemblyInfoInputs.cache
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\obj\Debug\netcoreapp3.1\Labo1.AssemblyInfo.cs
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\obj\Debug\netcoreapp3.1\Labo1.csproj.CoreCompileInputs.cache
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\obj\Debug\netcoreapp3.1\Labo1.dll
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\obj\Debug\netcoreapp3.1\Labo1.pdb
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo1\obj\Debug\netcoreapp3.1\Labo1.genruntimeconfig.cache

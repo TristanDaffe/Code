@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TaBhDam++aOeNeh3GP533+NmWGpODu9msPrR8euw8fWOdOzTlIJ2lJO2FrFgSjX4gs7n74pSnzvQJC9nWKbGFA==",
+  "success": true,
+  "projectFilePath": "D:\\TheStartOfEverything\\cours\\Git\\Code\\C#\\Labos\\Labo2\\Labo2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\trist\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.27\\microsoft.netcore.app.host.win-x64.3.1.27.nupkg.sha512"
+  ],
+  "logs": []
+}

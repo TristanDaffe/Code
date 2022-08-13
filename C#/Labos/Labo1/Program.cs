@@ -47,10 +47,7 @@ namespace Labo1 {
 
             test.Description();
             test2.Description();
-
-
-            Console.ReadKey();
-
+            
         }
         public static void AssertMaps(string expected, Player p) {
             Console.WriteLine("Expected answer : " + expected);
