@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <style>
+      #para {
+        background-color: olive;
+        color: papayawhip;
+        border: 1px black solid;
+        padding: 12px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1 id="titre">Titre de cette page</h1>
+    <p id="para">Paragraphe de cette page</p>
+
+    <script>
+        let titreHTML = document.getElementById("titre");
+        let paraHTML = document.getElementById("para");
+  
+        titreHTML.innerHTML = "Nouveau titre";
+        paraHTML.style.backgroundColor = "blue";
+        paraHTML.style.color = "white";
+        paraHTML.innerHTML += " Et la suite ?";
+      </script>
+</body>
+</html>

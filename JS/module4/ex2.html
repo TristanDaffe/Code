@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        #cadre {
+            background-color: #EFFFEF;
+            border: 1px solid blue;
+            width: 800px;
+            height: 600px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        #cadre div {
+            box-sizing: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cadre"> </div>
+
+    <script>
+        function Carré(couleur, coté, bordure, écartGauche, écartHaut){
+            this.couleur = couleur;
+            this.coté = coté;
+            this.bordure = bordure;
+            this.écartGauche = écartGauche;
+            this.écartHaut = écartHaut;
+        }
+
+        let carré1 = new Carré ("green", 50, 2, 100, 100);
+
+        Carré.prototype.toString = function () {
+            return "Carré " + this.couleur + " de  " + this.coté + " px de côté";
+        }
+
+        function affiche(){
+            let cadreHTML = document.getElementById("cadre");
+            cadreHTML.innerHTML += `<div style='position:absolute; 
+                left:${this.écartGauche}px; 
+                top:${this.écartHaut}px; 
+                width: ${this.coté}px; 
+                height: ${this.coté}px; 
+                border: ${this.bordure}px solid black; 
+                background-color: ${this.couleur}'>
+                </div>`;
+        }
+        Object.assign(Carré.prototype, { affiche });
+
+        let carré2 = new Carré("blue", 100, 1, 150, 50);
+
+        carré1.affiche()
+        carré2.affiche()
+    </script>
+
+</body>
+</html>
