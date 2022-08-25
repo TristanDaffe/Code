@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quelques sagas de jeux de rôle sur PC</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #wrapper {
+            width: 600px;
+            margin: 0 auto;
+            color: #E5DFC5;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            border-bottom: 2px solid #91C7A9;
+        }
+
+        h2 {
+            border: 2px solid #A92F41;
+            background-color: #A92F41;
+            color: black;
+            padding: 2px;
+            margin: 12px 2px 0 2px;
+            border-radius: 8px;
+        }
+
+        ul.saga {
+            background-color: #B48375;
+            list-style-type: none;
+            margin: 0px 2px;
+            padding: 0px;
+            border: 2px solid #A92F41;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .saga li {
+            display: block;
+            padding: 2px;
+            color: black;
+        }
+    </style>
+    <script>
+        let cadre;
+
+        function ajouteSaga(titre, ...episodes){
+            //ajoute le titre
+            let elemTitre = document.createElement("h2");
+            elemTitre.innerHTML = titre;
+            elemTitre.addEventListener("click", toggleVisible);
+            
+            let liste = document.createElement("ul");
+            liste.className = "saga";
+            liste.style.display = "none";
+            elemTitre.appendChild(liste);
+            
+            //ajoute les épisodes
+            for(let episode of episodes){
+                let elem = document.createElement("li");
+                elem.textContent = episode;
+                liste.appendChild(elem);
+            }
+
+            cadre.appendChild(elemTitre);
+        }
+
+        function toggleVisible(){
+			if(this.className == "contenu-visible"){
+				this.children[0].style.display = "none";
+                this.style.borderRadius  = "8px";
+				this.className = "";
+			}
+			else{
+				this.children[0].style.display = "block";
+				this.style.borderRadius  = "8px 0px";
+				this.className = "contenu-visible";
+			}
+        }
+        
+        window.onload = function () {
+            cadre = document.getElementById("sagas");
+            ajouteSaga("Baldur's Gate",
+                    "Baldur's Gate I (1998)",
+                    "Baldur's Gate: Tales of the Sword Coast (1999)",
+                    "Baldur's Gate II: Shadows of Amn (2000)",
+                    "Baldur's Gate II: Throne of Bhaal (2001)",
+                    "Baldur's Gate: Enhanced Edition (2012)",
+                    "Baldur's Gate II: Enhanced Edition (2013)",
+                    "Baldur's Gate: Enhanced Edition - Siege of Dragonspear (2016)"
+                );
+                ajouteSaga("Icewind Dales",
+                    "Icewind Dales (2000)",
+                    "Icewind Dales II (2002)",
+                    "Icewind Dales: Enhanced Edition (2014)"
+                );
+                ajouteSaga("Neverwinter Nights",
+                    "Neverwinter Nights (2002)",
+                    "Neverwinter Nights: Shadows of Undrentide (2003)",
+                    "Neverwinter Nights: Hordes of the Underdark (2003)",
+                    "Neverwinter Nights 2 (2006)",
+                    "Neverwinter Nights 2: Mask of the Betrayer (2007)",
+                    "Neverwinter Nights 2: Storm of Zehir (2008)",
+                    "Neverwinter Nights 2: Mysteries of Westgate (2009)"
+                );
+                ajouteSaga("Dragon Age",
+                    "Dragon Age: Origins (2009)",
+                    "Dragon Age II (2011)",
+                    "Dragon Age: Inquisition (2014)"
+                );
+                ajouteSaga("Mass Effect",
+                    "Mass Effect (2007)",
+                    "Mass Effect 2 (2010)",
+                    "Mass Effect 3 (2012)",
+                    "Mass Effect: Andromeda (2017)"
+                );
+                ajouteSaga("Fallout",
+                    "Fallout (1997)",
+                    "Fallout 2 (1998)",
+                    "Fallout Tactics (2001)",
+                    "Fallout: Brotherhood of Steel (2004)",
+                    "Fallout 3 (2008)",
+                    "Fallout: New Vegas (2010)",
+                    "Fallout 4 (2015)"
+                );
+        };
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Quelques sagas de JDR sur PC</h1>
+        <p>Cliquez sur un titre pour afficher/cacher les détails.</p>
+        <div id="sagas"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        ul {
+            border: 2px solid #4b3124;
+            height: 200px;
+            list-style-type: none;
+            margin: 8px;
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid #e7dfc6;
+            background-color: #f3efe2;
+            border-radius: 4px;
+            margin: 4px;
+            padding: 2px;
+            text-align: center;
+            cursor: ew-resize;
+        }
+
+        li:hover {
+            background-color: #e7dfc6;
+            border: 1px solid #4b3124;
+        }
+    </style>
+
+    <script>
+        window.onload = init;
+
+        function init(){
+            let elems = document.getElementsByClassName("elem");
+            for(i of elems)
+                i.addEventListener("click", switchColumn);
+        }
+
+		function switchColumn(){
+			if(this.parentNode.id == "liste1")
+				liste2.appendChild(this);
+			else
+				liste1.appendChild(this);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <table width="100%">
+        <tr>
+            <td width="50%">
+                <ul id="liste1">
+                    <li class="elem">Un</li>
+                    <li class="elem">Deux</li>
+                    <li class="elem">Trois</li>
+                    <li class="elem">Quatre</li>
+                    <li class="elem">Cinq</li>
+                </ul>
+            </td>
+            <td width="50%">
+                <ul id="liste2">
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
