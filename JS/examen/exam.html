@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+
+    <script>
+    //partie 2
+        let c1 ={
+        commanditaire: "Henallux",
+        dateDébut : 20210915,
+            duréePrévue : 180,
+                étapes : [{ nom: "démolition", durée: 20 },
+                { nom: "maçonnerie", durée: 45 },
+                { nom: "couverture", durée: 30 },
+                { nom: "plafonnage", durée: 35 },
+                { nom: "plomberie" },
+                { nom: "menuiserie" },
+                { nom: "électricité" }]
+        }
+
+        let c2 = {
+        commanditaire: "Henallux",
+        dateDébut : 20220920,
+            duréePrévue : 350,
+                étapes : [{ nom: "terrassement", durée: 30 },
+                { nom: "fondation", durée: 20 },
+                { nom: "maçonnerie", durée: 1500 },
+                { nom: "couverture", durée: 60 },
+                { nom: "plomberie", durée: 30 }]
+        }
+
+        function délaisRespectés (chantier) {
+            let tempsTotalEtapes = 0;
+            for(let étape of chantier.étapes){
+                if("durée" in étape){
+                    tempsTotalEtapes += étape.durée;
+                }
+            }
+            return tempsTotalEtapes < chantier.duréePrévue;
+        }
+
+        function chantierTerminé (chantier) {
+            return chantier.étapes.every(étape =>  "durée" in étape); 
+        }
+
+
+
+        function majÉtapesTerminées(étapes, chantier) {
+            for (let étape of étapes) {
+                let i = chantier.étapes.findIndex(x => x.nom == étape.nom)
+            if (i != -1 && "durée" in étape) 
+                chantier.étapes[i].durée = étape.durée;
+        }
+    }
+
+    function majÉtapesTerminées(étapes, chantier) {
+	    for (let étape of étapes) {
+            let i = chantier.étapes.findIndex(x => x.nom == étape.nom)
+            if (i != -1 && "durée" in étape)
+                chantier.étapes[i].durée = étape.durée;
+        }
+    }
+
+    function Chantier (commanditaire, dateDébut, duréePrévue) {
+		 this.commanditaire = commanditaire;
+		 this.dateDébut = dateDébut;
+		 this.duréePrévue = duréePrévue;
+		 this.étapes = [];
+	}
+    Chantier.prototype.nomEtapes = [];
+
+    Chantier.prototype.ajouteÉtape = function (nom, durée, montant) {
+		this.étapes.push({nom, durée, montant});
+		if(!this.nomEtapes.includes(nom)){
+			this.nomEtapes.push(nom);
+	    }
+    }
+
+
+    Chantier.prototype.étapeLaPlusChère = function () {
+  	    return this.étapes.sort( (x,y) => y - x)[0];
+	}
+  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
