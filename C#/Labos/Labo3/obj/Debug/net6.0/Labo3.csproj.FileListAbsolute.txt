@@ -1,0 +1,15 @@
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\bin\Debug\net6.0\Labo3.exe
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\bin\Debug\net6.0\Labo3.deps.json
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\bin\Debug\net6.0\Labo3.runtimeconfig.json
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\bin\Debug\net6.0\Labo3.dll
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\bin\Debug\net6.0\Labo3.pdb
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\Labo3.csproj.AssemblyReference.cache
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\Labo3.GeneratedMSBuildEditorConfig.editorconfig
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\Labo3.AssemblyInfoInputs.cache
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\Labo3.AssemblyInfo.cs
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\Labo3.csproj.CoreCompileInputs.cache
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\Labo3.dll
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\refint\Labo3.dll
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\Labo3.pdb
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\Labo3.genruntimeconfig.cache
+D:\TheStartOfEverything\cours\Git\Code\C#\Labos\Labo3\obj\Debug\net6.0\ref\Labo3.dll
