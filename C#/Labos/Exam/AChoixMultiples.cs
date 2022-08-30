@@ -3,11 +3,17 @@
 namespace Exam {
 
     public class AChoixMultiples : Question {
+        private char réponse;
         private HashSet<string> propositions;
 
-        public override string Réponse { get; }
-        
-        public AChoixMultiples(string énoncé, int nbPoints, HashSet<string> propositions) : base(énoncé, nbPoints) {
+        public override string Réponse {
+            get {
+                return réponse.ToString();
+            }
+        }
+
+        public AChoixMultiples(string énoncé, int nbPoints, char réponse, HashSet<string> propositions) : base(énoncé, nbPoints) {
+            this.réponse = réponse;
             this.propositions = propositions;
         }
 

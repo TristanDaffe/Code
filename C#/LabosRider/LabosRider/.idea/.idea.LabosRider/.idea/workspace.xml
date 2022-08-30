@@ -12,132 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1fef654-d11c-41c5-bcfd-01bdee25c6dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/AChoixMultiples.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/Exam.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/Question.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/Test.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/TestCloturé.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/VraiFaux.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/bin/Debug/net6.0/Exam.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/bin/Debug/net6.0/Exam.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/ConsoleApp1.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/ConsoleApp1.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/ConsoleApp1.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/ConsoleApp1.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/ConsoleApp1.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/ConsoleApp1.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/ConsoleApp1.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/ConsoleApp1.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/Exam.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/Exam.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/Exam.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/Exam.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/Exam.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/Exam.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/Exam.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/Exam.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Debug/net6.0/Exam.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Exam.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Exam.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/Exam.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Exam/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/.vs/Labo3/v16/.suo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/DessinAnime.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/Emission.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/EpisodeSérie.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/Film.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/Labo3.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/UtilTV.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/bin/Debug/net6.0/Labo3.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/bin/Debug/net6.0/Labo3.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/Labo3.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/Labo3.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/Labo3.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/Labo3.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/Labo3.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/Labo3.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/Labo3.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/Labo3.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Debug/net6.0/Labo3.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Labo3.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Labo3.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/Labo3.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/Labo3Ex2.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Debug/net6.0/Labo3Ex2.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Debug/net6.0/Labo3Ex2.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Debug/net6.0/Labo3Ex2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Debug/net6.0/Labo3Ex2.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Debug/net6.0/Labo3Ex2.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Debug/net6.0/Labo3Ex2.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Labo3Ex2.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Labo3Ex2.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/Labo3Ex2.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo3Ex2/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/Chomeur.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/Formation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/Inscrit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/Institution.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/Labo4.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/Travailleur.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/Utilitaire.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Debug/net6.0/Labo4.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Debug/net6.0/Labo4.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Debug/net6.0/Labo4.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Debug/net6.0/Labo4.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Debug/net6.0/Labo4.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Debug/net6.0/Labo4.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Labo4.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Labo4.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/Labo4.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo4/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/Labo5.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/Todo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/bin/Debug/net6.0/Labo5.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/bin/Debug/net6.0/Labo5.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/Labo5.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/Labo5.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/Labo5.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/Labo5.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/Labo5.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/Labo5.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/Labo5.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/Labo5.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Debug/net6.0/Labo5.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Labo5.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Labo5.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/Labo5.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Labos/Labo5/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labos/Labo1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labos/Labo1/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Labos/Labo2/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labos/Labo2/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labos/Exam/AChoixMultiples.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labos/Exam/AChoixMultiples.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labos/Exam/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labos/Exam/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labos/Exam/Question.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labos/Exam/Question.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Labos/Exam/VraiFaux.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Labos/Exam/VraiFaux.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LabosRider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LabosRider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabosRider.sln" beforeDir="false" afterPath="$PROJECT_DIR$/LabosRider.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,16 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.smartKeys_rider&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "ReSpellerSettingsId",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.ConsoleApp1">
     <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -319,6 +198,7 @@
       <workItem from="1661769227179" duration="557000" />
       <workItem from="1661775105692" duration="9041000" />
       <workItem from="1661796813980" duration="4066000" />
+      <workItem from="1661856448327" duration="3422000" />
     </task>
     <servers />
   </component>

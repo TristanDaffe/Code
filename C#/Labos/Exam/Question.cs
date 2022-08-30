@@ -2,7 +2,6 @@
 namespace Exam {
     public abstract class Question {
         
-        
         public int NbPoints { get; }
 
         public abstract string Réponse { get;  }

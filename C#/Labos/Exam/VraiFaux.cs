@@ -2,12 +2,15 @@
 
 namespace Exam {
     class VraiFaux : Question {
+        private bool réponse;
+        public override string Réponse {
+            get {
+                return réponse ? "vrai" : "faux";
+            }
+        }
 
-        public override string Réponse { get; }
-
-        public VraiFaux(string énoncé, int nbPoints, string réponse) : base(énoncé, nbPoints) {
-
-            Réponse = réponse;
+        public VraiFaux(string énoncé, int nbPoints, bool réponse) : base(énoncé, nbPoints) {
+            this.réponse = réponse;
         }
 
         public override string ToString() {
