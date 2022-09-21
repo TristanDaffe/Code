@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H3Ob6ogtJu3dNB5ON/h/nw2q+AHM/ZMzkUVAu7qKYoptbkUGqZ7NnganySj1cC84H/qclNW/vuzg2tgvQgBOSQ==",
+  "dgSpecHash": "Nh0jAaM3WO8JyEs2MHcxht2F7SjNtBRz4bM1ngh7sOEiA5CDIZ+LMOaUYMJoou6HIzZvzBpE8W0k9CbwitqWOg==",
   "success": true,
-  "projectFilePath": "D:\\TheStartOfEverything\\cours\\Git\\Code\\C#\\Labos\\Labo2\\Labo2.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\trist\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.27\\microsoft.netcore.app.host.win-x64.3.1.27.nupkg.sha512"
-  ],
+  "projectFilePath": "/mnt/E07881AC78818250/TheStartOfEverything/cours/Git/Code/C#/Labos/Labo2/Labo2.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

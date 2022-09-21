@@ -1,80 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb45c595-f9d1-4408-af0e-9a4229d68ba5" name="Changes" comment="ViewPackage - showException - change type JOptionPane">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/AccessException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/AddException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/DeleteUserException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/GetException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/InvalidSubscriptionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/IsHiringException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/IsNotHiringBike.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/NoBikeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/NoHistoryBikeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/NullFieldException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/UpdateFielExcpetion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/UpdateUserProfilException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/UserConnectionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/exceptionPackage/UserRegisterException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/AllUserModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/BikeHireModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/BikeHistoryModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/BikeLogo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/BikeTypeModifModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeSubPanel$ButtonsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeSubPanel$SelectForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeSubPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeUserInfoPanel$ButtonsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeUserInfoPanel$ConnectionButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeUserInfoPanel$FormPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ChangeUserInfoPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectedPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectionPanel$ButtonsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectionPanel$ConnectionButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectionPanel$FormPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ConnectionPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/DeleteUserPanel$ButtonForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/DeleteUserPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HireBikePanel$ButtonForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HireBikePanel$HireForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HireBikePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HiringBikePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/HomePagePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/MainWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/MainWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/RegisterPanel$ButtonsPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/RegisterPanel$ConnectionButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/RegisterPanel$FormPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/RegisterPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ReturnBikePanel$ButtonForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ReturnBikePanel$ReturnFrom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ReturnBikePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ReturnedBikePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikeHistory$ButtonForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikeHistory$SearchButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikeHistory$SelectForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikeHistory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel$ButtonPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel$FormPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel$ResultPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel$SearchButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchBikePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchModifOnBikeType$ButtonForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchModifOnBikeType$SearchButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchModifOnBikeType$SelectForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/SearchModifOnBikeType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/UserProfilePanel$HiringStat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/UserProfilePanel$ProfilForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/UserProfilePanel$StationForm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/UserProfilePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/ViewUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjetJava/viewPackage/bikeLogoThread.class" beforeDir="false" />
-    </list>
+    <list default="true" id="bb45c595-f9d1-4408-af0e-9a4229d68ba5" name="Changes" comment="ViewPackage - showException - change type JOptionPane" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +17,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -118,11 +45,11 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "/media/seurya/Fichier/TheStartOfEverything/cours/Git/ProjetJava/source",
+    "last_opened_file_path": "/mnt/E07881AC78818250/TheStartOfEverything/cours/Git/Code/Java/ProjetVelo/source",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -319,6 +246,7 @@
       <workItem from="1655187994904" duration="3517000" />
       <workItem from="1655225126318" duration="14000" />
       <workItem from="1656278364126" duration="110000" />
+      <workItem from="1663068465448" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="Bike - start">
       <created>1649597011511</created>

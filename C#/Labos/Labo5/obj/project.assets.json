@@ -1,43 +1,35 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    ".NETFramework,Version=v6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    ".NETFramework,Version=v6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\trist\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
+    "/home/seurya/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TheStartOfEverything\\cours\\Git\\Code\\C#\\Labos\\Labo5\\Labo5.csproj",
+      "projectUniqueName": "/mnt/E07881AC78818250/TheStartOfEverything/cours/Git/Code/C#/Labos/Labo5/Labo5.csproj",
       "projectName": "Labo5",
-      "projectPath": "D:\\TheStartOfEverything\\cours\\Git\\Code\\C#\\Labos\\Labo5\\Labo5.csproj",
-      "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
-      "outputPath": "D:\\TheStartOfEverything\\cours\\Git\\Code\\C#\\Labos\\Labo5\\obj\\",
+      "projectPath": "/mnt/E07881AC78818250/TheStartOfEverything/cours/Git/Code/C#/Labos/Labo5/Labo5.csproj",
+      "packagesPath": "/home/seurya/.nuget/packages/",
+      "outputPath": "/mnt/E07881AC78818250/TheStartOfEverything/cours/Git/Code/C#/Labos/Labo5/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
-      ],
       "configFilePaths": [
-        "C:\\Users\\trist\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/home/seurya/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net60": {
           "projectReferences": {}
         }
       },
@@ -48,24 +40,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
-        "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
-        ],
-        "assetTargetFallback": true,
-        "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+      "net60": {
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/3.1.422/RuntimeIdentifierGraph.json"
       }
     }
   }
