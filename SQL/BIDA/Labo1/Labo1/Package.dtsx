@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/23/2022 9:56:33 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SUSUCOMPUTER"
+  DTS:CreatorName="SUSUCOMPUTER\trist"
+  DTS:DTSID="{2D10A633-DDBC-4813-A199-D45B1677E6DF}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.845.0"
+  DTS:LocaleID="2060"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{A92BA07D-BD94-4DE3-B032-B58AAA754BCE}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{774A5D09-8475-4FE8-8AE8-6E5969AA44CC}"
+      DTS:ObjectName=".sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="User ID=sa;Provider=MSOLEDBSQL19.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGRrNSJaRrkaSxzTUkFO+mQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD/jG7wXg0BrMCudrt2Lw71cyhVL/TudQOH+OV/0eiTuwAAAAAOgAAAAAIAACAAAAA3bkEit9hv/5EqvpZQdNJkxqoE/dNO8jeN/iveyWUkkCAAAAAjtByiXxWpyTKBX03tKHyag9UjZKdR1sosclGXwRnOQUAAAACNQ1LU/GoA9qaTicdlx3WXjhuJwZc8nWQIKQx7w7scMoV7kLx4p9y71tBbeP1PHH166oJUyOldGQa8rkpLHZLN</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[BIDA.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F4D71C4E-3EFB-4DDC-A893-51EF79C4E45B}"
+      DTS:ObjectName="BIDA.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=BIDA;User ID=sa;Provider=MSOLEDBSQL19.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGRrNSJaRrkaSxzTUkFO+mQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADGR7l6H4RkqudzwVwP9jLm4Ss6Gkl+FHU1Fn+SZtwIFQAAAAAOgAAAAAIAACAAAACqrjl1LjT1OAT+5GjA62wfy2zfl3LF3eQFVkCQHgDFNiAAAACYYO94dllUB754ztkGWZTZ30JLQBOK75EF3ZaqrJ1DT0AAAABQ5PZGuwk0N3tDdtc+pmly+v5LtZ9OtpkxWDItVAgeaQMXQK5igZXRZywaty8LbQnDX95R33n5/yWsjbYPkHxB</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tâche de flux de données"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{76B70B03-101F-4800-BF55-1CDA4F49CB56}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tâche de flux de données"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="197.6,41.6"
+          Id="Package\Tâche de flux de données"
+          TopLeft="224.999991059304,151.666667872005" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

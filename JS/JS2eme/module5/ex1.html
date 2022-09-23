@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quelques peintures</title>
+    <meta charset="utf-8" />
+    <style>
+        #peintures {
+            border: 1px solid green;
+            background-color: lightgreen;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        .peinture {
+            border: 2px solid black;
+            margin: 4px;
+            width: 150px;
+        }
+
+        .peinture:hover {
+            border-color: yellow;
+        }
+
+        #commentaire {
+            margin-top: 0;
+            border: 1px solid green;
+            background-color: lemonchiffon;
+            min-height: 80px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+        let peintures = [
+            ["escaliers.jpg", "Maison aux escaliers", "Escher"],
+            ["frappis.jpg", "", "Frappis"],
+            ["radeau.jpg", "Radeau de la Méduse", "Géricault"],
+            ["joconde.png", "Joconde revisitée"],
+            ["fleurs.jpg"],
+            ["pipe.jpg", "La trahison des images", "Magritte"],
+            ["persistence.jpg", "The Persistence of Memory", "Dali"]
+        ];
+
+        function afficheComm(){
+            let cible = document.getElementById("commentaire");
+            cible.innerHTML = `Commentaire : ${this.dataset.info}`;
+        }
+
+        function creePeinture(src, titre, auteur){
+            let peinture = document.createElement("img");
+            peinture.src = "image/peintures/"+ src;
+            peinture.className = "peinture";
+
+            let comm = "";
+            if(titre == null){
+                comm = "aucune information";
+            }
+            else{
+                if(auteur == null)
+                    comm = `&laquo; ${titre} &raquo; (auteur inconnu)`;
+                else
+                    comm = `&laquo; ${titre} &raquo; par ${auteur}`
+            }
+
+            peinture.dataset.info = comm;
+            peinture.addEventListener("mouseover", afficheComm);
+
+            return peinture;
+        }
+        
+
+        window.onload = function () {
+            let cadre = document.getElementById("peintures");
+            for (let peinture of peintures) {
+                let elem = creePeinture(...peinture);
+                cadre.appendChild(elem);
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div id="peintures"></div>
+    <div id="commentaire">
+        <p id="pcommentaire"></p>
+    </div>
+</body>
+
+</html>

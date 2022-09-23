@@ -10,4 +10,5 @@ void main() {
 	displayAccuracy(realClasses, estimateClasses, 8);
 	printf("\n\n");
 	displayConfusionMatrix(realClasses, estimateClasses, 8); 
+	printf("\n\n");
 }

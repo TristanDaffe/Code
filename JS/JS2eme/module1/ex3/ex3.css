@@ -1,0 +1,24 @@
+.nombre { 
+    text-align: center; 
+    background-color: blue;
+    color: white; 
+    font-weight: bold; 
+}
+
+th {
+    background-color: gray;
+    color: blue;
+    font-weight: bold;
+}
+
+tr {
+    background-color: white;
+}
+
+table tr:nth-child(odd){
+    background-color: yellow;
+}
+
+tr td:nth-child(3) {
+    font-weight: bold;
+}

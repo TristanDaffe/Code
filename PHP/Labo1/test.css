@@ -1,0 +1,38 @@
+img{
+    width: 150px;
+    height: 100px;
+    
+    float: right;
+    padding-right: 6px;
+    padding-bottom: 6px;
+}
+
+body{
+    background-color: olive;
+}
+
+div{
+    width: 800px;
+    margin: auto;
+    padding: 6px;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    color: yellow;
+}
+
+#pHeure{
+    border: 2px solid olive;    
+    text-align: center;
+}
+
+.loremIpsum{
+    font-style: italic;
+}
+
+.loremIpsum::first-letter{
+    color: yellow;
+    font-size: 200%;
+}
