@@ -48,3 +48,7 @@ class Redbull extends Car {
         this.team = "Redbull";
     }
 }
+
+function getTeams(cars){
+    let teams = [];
+}
