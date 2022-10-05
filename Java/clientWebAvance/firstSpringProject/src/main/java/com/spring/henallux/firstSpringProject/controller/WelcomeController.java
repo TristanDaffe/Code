@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class WelcomeController {
     @RequestMapping (method = RequestMethod.GET)
     public String home (Model model){
-        model.addAttribute("age", 8);
-        return "welcome";
+        model.addAttribute("titrePage", "La banane");
+//        return "welcome";
+        return "integrated:welcome";
     }
 }
