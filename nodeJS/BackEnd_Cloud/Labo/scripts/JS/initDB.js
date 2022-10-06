@@ -12,7 +12,7 @@ async function initDB(){
         console.error(e);
     } 
     finally {
-        client.release();
+        client.release(); // hyper important !!!
         await pool.end();
     }
 }
