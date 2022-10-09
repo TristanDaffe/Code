@@ -18,7 +18,7 @@
     // echo $msg
 
     $x = 7259;
-    $s = $x ."";
+    $s = "$x";
 
     for($i = 0; $i < strlen($s); $i++) :
         $msg = "";
