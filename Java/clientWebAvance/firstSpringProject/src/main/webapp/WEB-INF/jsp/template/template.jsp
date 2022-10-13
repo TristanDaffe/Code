@@ -3,28 +3,26 @@
 <%@ include file="../include/importTags.jsp"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 
-
+<!DOCTYPE html>
 <html>
 <head>
-  <link type="text/css" href="<spring:url value='/css/first.css' />" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="<spring:url value='/css/first.css' />">
   <title>
     ${titrePage}
   </title>
 </head>
 <body>
-  <div>
-    <!-- Top banner -->
-    Banner
-  </div>
+    <div id="banner">
+      <!-- Top banner -->
+      Banner
+    </div>
 
-  <div>
-    <!-- Main content -->
-    <tiles:insertAttribute name="main-content"/>
-    <br>
-    <img src='<spring:url value="/images/banane.jpg"/>' />
-  </div>
-
-  <div>
+    <div id="main-content">
+      <!-- Main content -->
+        <img src='<spring:url value="/images/banane.jpg"/>' />
+        <tiles:insertAttribute name="main-content"/>
+    </div>
+  <div id="footer">
     <!-- Footer -->
     footer
   </div>

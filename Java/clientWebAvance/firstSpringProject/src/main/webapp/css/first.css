@@ -1,5 +1,29 @@
 img {
     max-width: 100px;
     max-height: 100px;
+}
 
+#banner {
+    position: sticky;
+    text-align: center;
+    background: red;
+    color: white;
+    top: 0px;
+    min-width: 100%;
+    margin: -10px;
+}
+
+#footer {
+    text-align: center;
+    background: darkslategrey;
+    color: black;
+    position: absolute;
+    min-width: 100%;
+    margin: -10px;
+}
+
+#main-content {
+    background: grey;
+    margin: auto auto 50px auto;
+    width: 75%;
 }

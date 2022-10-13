@@ -42,6 +42,7 @@ void main (){
     double yk = cMin + (cMAx - cMin) * (suite2[0] / m);
     
     printf("%lf - %lf", xk, yk);
+    printf("\n");
 
 }
 

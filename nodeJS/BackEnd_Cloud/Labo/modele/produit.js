@@ -5,13 +5,11 @@ const produits = [
     {id: 3, nom: "Nintendo Switch", prix:349.99}
 ]
 
-
 module.exports.getProduit = (id) => {
     const resultats = produits.filter(p => p.id === id);
     if(resultats.length > 0){
         return resultats[0];
-    } 
-    else {
+    } else {
         throw new Error("Aucun produit trouvé");
     }
 }
@@ -40,7 +38,7 @@ module.exports.deleteProduit = (id) => {
         if(produits[i].id === id){
             produits.splice(i, 1);
             return true;
-            }
         }
+    }
     return true;
 }
