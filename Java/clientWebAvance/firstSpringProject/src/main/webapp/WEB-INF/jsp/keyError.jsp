@@ -1,13 +1,10 @@
-<%@ page pageEncoding="UTF-8"
-         contentType="text/html; charset=UTF-8"%>
-<%@ include file="include/importTags.jsp"%>
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title> Error </title>
+    <title>Error</title>
 </head>
 <body>
+<div>Sorry, bad magic key code!</div>
 
-    <p>Sorry, bad magic key code!</p>
 </body>
 </html>

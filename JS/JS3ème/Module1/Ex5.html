@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .negatif { color : red ; font-weight : bold }
+        .positif { color : blue }
+        table{
+            border-collapse: collapse;
+            border : 1px solid black;
+        }
+        td, th {
+            border : 1px solid black;
+            padding : 5px;
+        }
+    </style>
+    <script>
+        function afficheValeur(nb){
+            return `<td class='${nb < 0 ? "negatif" : "positif"}'>${nb}</td>`;
+        }
+
+        function construitTableau(){
+            document.write("<table>");
+            document.write("<tr> <th>No</th> <th>Nombre</th> <th>Min</th> <th>Max</th> <th>Somme</th></tr>");
+
+            let nbNombre = 0;
+            let somme = 0;
+            
+            let nombre = Number(prompt('entrez un nombre :'));
+            let min = nombre;
+            let max = nombre;
+
+            while(isFinite(nombre)){
+                nbNombre++;
+                if(nombre < min){
+                    min = nombre;
+                }
+                else{
+                    if(nombre > max){
+                        max = nombre;
+                    }
+                }
+                somme += nombre;
+
+                document.write("<tr>");
+
+                document.write(afficheValeur(nbNombre));
+                document.write(afficheValeur(nombre));
+                document.write(afficheValeur(min));
+                document.write(afficheValeur(max));
+                document.write(afficheValeur(somme));
+
+                document.write("</tr>");
+
+                nombre = Number(prompt('entrez un nombre :'));
+            }
+
+            document.write("</table>");
+        }
+    </script>
+</head>
+<body>
+    <script>
+        construitTableau();
+    </script>
+    
+</body>
+</html>

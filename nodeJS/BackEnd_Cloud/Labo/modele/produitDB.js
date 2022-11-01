@@ -3,7 +3,7 @@ module.exports.getProduit = async (id, client) => {
 }
 
 module.exports.postProduit = async (nom, prix, client) => {
-   return await client.query("INSERT INTO produit(nom, prix) VALUES ($1, $2) RETURNING id", [nom, prix]);
+   return await client.query("INSERT INTO produit(nom, prix) VALUES ($1, $2)", [nom, prix]);
 }
 
 module.exports.updatePrix = async (id, prix, client) => {

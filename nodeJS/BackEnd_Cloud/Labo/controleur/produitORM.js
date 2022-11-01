@@ -1,24 +1,24 @@
 const ProduitORM = require('../ORM/model/Produit');
 
 module.exports.getProduit = async (req, res) => {
-	const idTexte = req.params.id;
-	const id = parseInt(idTexte);
-	try {
-		if (isNaN(id)) {
-			res.sendStatus(400);
-		} else {
-			const produit = await ProduitORM.findOne({ where: { id: id } });
-			if (produit !== null) {
-				res.json(produit);
-			} else {
-				res.sendStatus(404);
-			}
-		}
-	} catch (error) {
-		console.error(error);
-		res.sendStatus(500);
-	}
-};
+    const idTexte = req.params.id; //attention ! Il s'agit de texte !
+    const id = parseInt(idTexte);
+    try{
+        if(isNaN(id)){
+            res.sendStatus(400);
+        } else {
+            const produit = await ProduitORM.findOne({where: {id: id}});
+            if(produit !== null){
+                res.json(produit);
+            } else {
+                res.sendStatus(404);
+            }
+        }
+    } catch (error){
+        console.error(error);
+        res.sendStatus(500);
+    }
+}
 
 module.exports.postProduit = async (req, res) => {
     const body = req.body;
@@ -28,9 +28,9 @@ module.exports.postProduit = async (req, res) => {
             nom,
             prix
         });
-        res.status(201);
+        res.sendStatus(201);
     } catch (error){
-        console.error(error);
+        console.log(error);
         res.sendStatus(500);
     }
 }

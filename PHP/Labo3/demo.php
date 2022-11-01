@@ -24,39 +24,10 @@
             color: red;
         }
     </style>    
-
     <?php
-    $coulH = "blue";
-    $coulF = "red";
-
-    function pourcents($val1, $val2){
-        return round($val1 / $val2 * 100, 2) ."%";
-    }
-
-    function repete($nb, $txt = "$"){
-        $res = "";
-        for($i = 0; $i < $nb; $i++){
-            $res += $txt;
-        }
-        return $res;
-    }
-
-    function barre($val1,$val2,$coul1,$coul2,$taille = 20){
-        $nb1 = pourcent($val1,$val2) * $taille / 100;
-        $nb2 = $taille - $nb1;
-
-    }
-
-    function ligne($ctg,$val1,$val2) {
-        $pourc1 = pourcents($val1, $val1+ $val2);
-        $pourc2 = pourcents($val2, $val1+ $val2);
-        echo "<tr><td>$ctg</td>
-            <td>$val1 ( $pourc1 ) </td>
-            <td>$val2 ( $pourc2 ) </td>
-            <td>.</td></tr>";
-    }
-    
-    require_once("code.php");
+        $coulH = "blue";
+        $coulF = "red";
+        require_once("code.php");
     ?>
 </head>
 <body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--  
+DOC pour adapter le code pour le futur
+- l'ajout d'une colone dans le tableau se fait dans la fonction generateSequence (c.f. commentaire)
+- dans le cas où la période est infinie, le navigateur va pas beaucoup aimer. ( Problème à potentiellement résoudre plus tard )
+-->
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="suite.css"/>
+    <script src="suite.js"></script>
+
+    <title>Les Mathématiques</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- entrée des variable de la suite -->
+        <div id="parameter">
+            <p>A </p><input type="number" id="a" value="0"/>
+            <p>M </p><input type="number" id="m" value="0"/>
+            <p>C </p><input type="number" id="c" value="0"/>
+            <p>X0 </p><input type="number" id="X0" value="0"/>
+            <p>
+                <button id="btn" onclick=generateSequence()>Generate</button>
+            </p>
+        </div>
+
+        <!-- sorties (période, suites) -->
+        <div id="output"></div>
+    </div>
+    <!-- partie des différents tests -->
+    <p>
+        <button id="btn" onclick=generateTest(testFrequence)>Test des frequences</button>
+        <button id="btn" onclick=generateTest(testSeries)>Test des series</button>
+        <button id="btn" onclick=generateTest(testSauts)>Test des sauts</button>
+        <button id="btn" onclick=generateTest(testCourse)>Test des courses</button>
+    </p>
+    <div class="wrapper">
+        <div id="validityTest"></div>
+    </div>
+</body>
+</html>

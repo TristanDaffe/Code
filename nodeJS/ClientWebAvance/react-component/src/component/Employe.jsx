@@ -9,7 +9,7 @@ class Employe extends React.Component {
 	constructor(props) {
 		super(props); 
 		const employes = this.props.employes;
-		const id = parseInt(this.props.match.params.id);
+		const id = parseInt(this.props.params.id);
 		const [employe] = employes.filter((e) => e.id === id);
 		this.state = {
 			id,
@@ -72,4 +72,4 @@ const mapDispatchToProps = (dispatch) => {
 		},
 	};
 };
-export default connect(mapStateToProps, mapDispatchToProps)(Employe);
+export default withParams(connect(mapStateToProps, mapDispatchToProps)(Employe));

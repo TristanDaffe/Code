@@ -27,11 +27,11 @@ module.exports.getProduit = async (req, res) => {
 
 module.exports.postProduit = async (req, res) => {
     const body = req.body;
-    const {nom, prix} = body;
+    const {id, nom, prix} = body;
     const client = await pool.connect();
     try{
-        const {rows} = await ProduitModele.postProduit(nom, prix, client);
-        res.status(201).send(rows[0].id);
+        await ProduitModele.postProduit(id, nom, prix, client);
+        res.sendStatus(201);
     } catch (error){
         console.error(error);
         res.sendStatus(500);

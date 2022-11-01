@@ -10,6 +10,7 @@ module.exports.getProduit = (req, res) => {
             const produit = ProduitModele.getProduit(id);
             res.json(produit);
         } catch (error){
+            console.error(error);
             res.sendStatus(404);
         }
     }

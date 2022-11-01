@@ -45,7 +45,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "/mnt/E07881AC78818250/TheStartOfEverything/cours/Git/Code/Java/ProjetVelo/source",
+    "last_opened_file_path": "/mnt/E07881AC78818250/TheStartOfEverything/cours/Git/Code/Java/clientWebAvance",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -247,6 +247,7 @@
       <workItem from="1655225126318" duration="14000" />
       <workItem from="1656278364126" duration="110000" />
       <workItem from="1663068465448" duration="55000" />
+      <workItem from="1665732867324" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="Bike - start">
       <created>1649597011511</created>

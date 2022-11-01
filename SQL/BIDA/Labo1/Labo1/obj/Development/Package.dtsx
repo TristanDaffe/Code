@@ -11,8 +11,8 @@
   DTS:LocaleID="2060"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{006DDD5F-1116-4687-B1D1-60384E1EDCD7}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{237B67E6-73E6-4190-B849-5A82E9E80ED8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -167,7 +167,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGRrNSJaRrkaSxzTUkFO+mQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADz6imSmffi//RYxjJfieMQ7qM/UGs+yhkzhA4bAiQJgAAAAAAOgAAAAAIAACAAAACswkR5/bHlloudiogjiRtENBHbI82f/Ue7pBH/QaFDSCAAAADB25408dyrCnao2Zpmd74LA708RVU97JEOEqnGdmF8CUAAAAAXd8kFnHopcNrJKg0fBMDm+OC6zJTSiSgwHYGIm2sQH/l0hM+LjnRox6/kYYJDAa3WaA7lNndjswzTSbHs0BXQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcW0HBsQHBEWDAc+UWn5V3AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABHxGEG2UHwFZqxdzgXsaLFIQYFFKj5lrnnME1NZMR5mgAAAAAOgAAAAAIAACAAAACBJuoaiZCJDTgPDgVlybZYfgqvT8v2bNFtP2fDaiGe5CAAAAAL2L8p1TWuNSGoFK+W1nrUduKmlKaHDLuJ2cqXSHMaykAAAACXcvBgUZJrBZkX80w/cwgvZbiBaGdJq3MsCMBtcxWvP+XDItFNJlpWQSSF+EzXF8xrWXd1u9iX94dH8TrDNjdU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -749,33 +749,21 @@
         <NodeLayout
           Size="195.2,41.6"
           Id="Package\Tâche de flux de données\Destination de fichier plat"
-          TopLeft="194.999992251396,296.400002355576" />
+          TopLeft="209.16665835513,263.466668760512" />
         <EdgeLayout
           Id="Package\Tâche de flux de données.Paths[Sortie de source OLE DB]"
-          TopLeft="304.333324260182,171.400000681877">
+          TopLeft="305.549991307656,171.400000681877">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11.7333320087857,125.000001673699"
+              EndConnector="0,92.0666680786351"
               Start="0,0"
-              End="-11.7333320087857,117.500001673699">
+              End="0,84.5666680786351">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,58.5000008368493" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,58.5000008368493"
-                    Point2="0,62.5000008368493"
-                    Point3="-4,62.5000008368493" />
-                  <mssgle:LineSegment
-                    End="-7.73333200878574,62.5000008368493" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7.73333200878574,62.5000008368493"
-                    Point2="-11.7333320087857,62.5000008368493"
-                    Point3="-11.7333320087857,66.5000008368493" />
-                  <mssgle:LineSegment
-                    End="-11.7333320087857,117.500001673699" />
+                    End="0,84.5666680786351" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

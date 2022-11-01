@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<p>Congratulation ! You are now connected ${user.getName()}</p>
+<p>Congratulation ! ${gift}</p>
 
 </body>
 </html>

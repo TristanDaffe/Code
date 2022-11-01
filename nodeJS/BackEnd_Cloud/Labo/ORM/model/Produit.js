@@ -5,14 +5,14 @@ const Produit = sequelize.define('produit', {
     id: {
         type: DataTypes.INTEGER,
         autoIncrementIdentity: true,
-        primaryKey: true
+        primaryKey: true,
     },
     nom: {
         type: DataTypes.STRING
     },
-    prix: {
+    prix:{
         type: DataTypes.FLOAT
-    },
+    }
 }, {
     timestamps: false,
     freezeTableName: true

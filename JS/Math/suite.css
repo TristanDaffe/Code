@@ -1,0 +1,87 @@
+    body{
+        font-family: Arial;
+        font-size: 1.2em;
+        justify-content: center;
+        text-align: center;
+
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.6104783599088839) 42%, rgba(0,212,255,1) 100%);
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    table{
+        padding: 10px 0px;
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 5px;
+        min-width: 50px;
+        text-align: center;
+    }
+    input{
+        width: 100px;
+    }
+/* style pour les parmamètres à entré */
+    #parameter{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+/* style pour le période et le tableau de sortie*/
+    #output{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+/* style pour le tableau + div pour scroll */
+    .scrollTable{
+        overflow: scroll;
+        height: 500px;
+        padding: 0px 10px;
+        scrollbar-color: rebeccapurple transparent;
+        scrollbar-width: thin;
+    }
+    /* ligne des titres reste quand on scroll */
+    #resultTable th {
+        position: sticky; 
+        top: 0; 
+        z-index: 1;        
+    }
+    /* couleur des cases */
+    .index{
+        font-weight: bold;
+    }
+    tr:nth-child(odd){
+        background-color: lightskyblue;
+    }
+    tr:nth-child(even){
+        background-color: lightcyan;
+    }
+    
+    tr:hover{
+        background-color: #ffcc99;
+    }
+    th{
+        background-color: #e6e6e6;
+    }
+
+/* styles pour les sortie de tests */
+    #result{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* style pour le slider du test de fréquence */
+.slider{
+    min-width: 250px;
+}

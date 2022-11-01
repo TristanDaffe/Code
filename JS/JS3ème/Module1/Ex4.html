@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <script>
+        let nbCliks = 0;
+        function clicBouton(){
+            nbCliks++;
+            alert("Vous avez cliqué sur le bouton "+ nbCliks + " fois !");
+        }
+        function clicLien(){
+            nbCliks = 0;
+            alert("Nombre de clics remis à zéro !");
+        }
+    </script>
+
+</head>
+
+<body>
+    <p>Combien de fois aurez-vous le courage de cliquer sur le bouton ?</p>
+    <button onclick="clicBouton()">Click me!</button>
+    <p>Cliquez <a onclick="clicLien()">ici</a> pour remettre le compteur à zéro !</p>
+</body>
+
+</html>
