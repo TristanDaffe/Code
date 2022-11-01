@@ -4,7 +4,10 @@ let validityTest;
 // contient la suite aléatoire avec les valeurs pour chaque colonne
 let suite;
 let suiteValide = false;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
 window.onload = init;
 function init(){
     // réupère les références vers les champs de saisie
@@ -22,13 +25,18 @@ function init(){
     validityTest = document.getElementById("validityTest");
 }
 
+<<<<<<< HEAD
 // fonction pour les boutons (ne génère pas de test si la suite est invalide)
+=======
+// fonction pour les boutons
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
 function generateTest(fun){
     if(suiteValide){
         fun();
     }
 }
 
+<<<<<<< HEAD
 // partie 0 : fonction de création d'un tableau avec un id
 // array est un tableau d'objet avec les clés et valeur (les valeurs des clés sont utilisés pour la génération des titres)
 function createTalbe(array, id){
@@ -36,6 +44,17 @@ function createTalbe(array, id){
 
     output += '<div class="scrollTable">';
     output += `<table id="${id}">`;
+=======
+// partie 0 : fonction d'affichage de tableau via une cible (élément HTML) et un tableau d'objets clé/valeur
+function createTalbe(array, title, cible){
+    cible.innerHTML = "";
+
+    let output = "";
+
+    output += '<h2>' + title + '</h2>';
+    output += '<div class="scrollTable">';
+    output += '<table id="resultTable">';
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
     // génère les titres des colonnes via les clés des éléments du tableau
     output += generateTopRow(array[0]);
 
@@ -47,7 +66,11 @@ function createTalbe(array, id){
     }
 
     output += "</table></div>";
+<<<<<<< HEAD
     return output;
+=======
+    cible.innerHTML = output;
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
 }
 function generateTopRow(sequence){
     
@@ -91,12 +114,19 @@ function generateSequence(){
         lastXn = xn;
         
         xn = (a * xn + c) % m;
+<<<<<<< HEAD
         let Un = xn / m;
         let yn = Math.floor(Un * 10);
         suite.push({
             "Index" : i+1,
             "Xn" : xn,
             "Un" : Un.toFixed(3),
+=======
+        let yn = Math.floor( xn / m * 10)
+        suite.push({
+            "Index" : i+1,
+            "Xn" : xn,
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
             "Yn" : yn,
         });
         i++;
@@ -106,8 +136,12 @@ function generateSequence(){
         suiteValide = false;
     }
     else{
+<<<<<<< HEAD
         output.innerHTML = '<h2> Période : ' + suite.length + '</h2>';
         output.innerHTML += createTalbe(suite, "suiteTable");
+=======
+        createTalbe(suite, "Période : " + suite.length, output);
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
         validityTest.innerHTML = "";
         suiteValide = true;
     }
@@ -120,6 +154,7 @@ function showError(){
 }
 
 // partie 2 : les test de validités statistiques
+<<<<<<< HEAD
 function testFrequence(taille = suite.length / 2){
 
     validityTest.innerHTML = "Test de fréquence : ";
@@ -157,6 +192,31 @@ function updateTestFrequence(){
     let taille = document.querySelector(".slider").value;
     document.getElementById("sliderValue").innerHTML = "Value : " + taille;
     document.getElementById("validityTest").getElementsByClassName("scrollTable")[0].innerHTML = createTalbe(generateFrequenceTable(taille), "frequenceTable");
+=======
+function testFrequence(){
+    // parcour la suite pour compter le nombre de fois que chaque valeur apparait dans la colonne Yn
+    let frequence = [];
+
+    for(let i = 0; i < 10; i++){
+        frequence[i] = {
+            "Xi" : i,
+            "Ri" : 0,
+            "Pi" : 1 / suite.length,
+        };
+    }
+
+    suite.forEach(x => {
+        frequence[x["Yn"]]["Ri"]++;
+    });
+
+    // colonne n * pi et (n * pi - ri)² / (n * pi)
+    frequence.forEach(x => {
+        x["nPi"] = x["Pi"] * suite.length;
+        x["(nPi - Ri)² / nPi"] = Math.pow(x["nPi"] - x["Ri"], 2) / x["nPi"];
+    });
+
+    createTalbe(frequence, "Test de fréquence : ", validityTest);
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
 }
 
 function testSeries(){
@@ -177,10 +237,15 @@ function testSeries(){
         let index = serie.findIndex(x => x["Xi,Xi+1"] === binome);
         serie[index]["Ri"]++;
     }
+<<<<<<< HEAD
     serie = serie.filter(x => x["Ri"] !== 0);
 
     validityTest.innerHTML = "Test des séries : ";
     validityTest.innerHTML += createTalbe(serie, "serieTable");
+=======
+
+    createTalbe(serie, "Test deSéries : ", validityTest);
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
 }
 
 function testSauts(){
@@ -189,21 +254,32 @@ function testSauts(){
     // calcul du nombre max de ligne (pour n * pi => 5)
     let nbLignes = (Math.log(5 / suite.length) / Math.log(0.9)); 
 
+<<<<<<< HEAD
     let piTot = 0;
+=======
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
     let i;
     for(i = 0; i < nbLignes -1 ; i++){
         sauts.push({
             "Saut" : i,
             "Ri" : 0,
             "Pi" : Math.pow(0.9, i) * 0.1,
+<<<<<<< HEAD
         });
         piTot += sauts[i]["Pi"];
+=======
+        });        
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
     }
     // dernière ligne pour les autres sauts
     sauts.push({
         "Saut" : i + " à " + suite.length,
         "Ri" : 0,
+<<<<<<< HEAD
         "Pi" : 1 - piTot,
+=======
+        "Pi" : Math.pow(0.9, i) * 0.1,
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
     });
 
     i = 0;
@@ -230,6 +306,7 @@ function testSauts(){
 
         i++;
     }
+<<<<<<< HEAD
     validityTest.innerHTML = "Test des Sauts : ";
     validityTest.innerHTML += createTalbe(sauts, "jumptable");
 }
@@ -265,3 +342,10 @@ function testCourse(){
     validityTest.innerHTML += createTalbe(course, "courseTable");
 }
 // reste test du poker et test du carré unité
+=======
+
+    createTalbe(sauts, "Test des Sauts : ", validityTest);
+}
+
+// reste test du poker, test du carré unité et des courses
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3

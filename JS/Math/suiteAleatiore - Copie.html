@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <!--  
 DOC pour adapter le code pour le futur
@@ -77,4 +78,80 @@ DOC pour adapter le code pour le futur
         <div id="validityTest"></div>
     </div>
 </body>
+=======
+<!DOCTYPE html>
+<!--  
+DOC pour adapter le code pour le futur
+- l'ajout d'une colone dans le tableau se fait dans la fonction generateSequence (c.f. commentaire)
+- dans le cas où la période est infinie, le navigateur va pas beaucoup aimer. ( Problème à potentiellement résoudre plus tard )
+- la folie ayant un peu contribuée, certains bout de code ne sont pas fort utile MAIS ils sont marqué pour facilement les supp
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Les Mathématiques</title>
+
+    <link rel="stylesheet" type="text/css" href="suite.css"/>
+    <script src="suite.js"></script>
+<!-- POUR LE LOL -->
+    <style>
+        .fun{
+            width: 90%;
+            height: 50px;
+            margin: 0 auto 20px auto;
+            box-sizing: border-box;
+            background-color: orange;
+            animation-name: couleur;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            display: flex;
+        }
+
+        @keyframes couleur{
+
+            from{
+                background-color: orange;
+                width: 100%;
+            }
+            25%{
+                background-color: blue;
+            }
+            50%{
+                background-color: purple;
+                width: 50%;
+            }
+            75%{
+                background-color: red;
+            }
+            to{
+                background-color: orange;
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- bon c'est pas très utile-->
+    <div class="fun"></div>
+
+    <!-- partie importante -->
+    <div class="wrapper">
+        <div id="parameter">
+            <p>A </p><input type="number" id="a" value="0"/>
+            <p>M </p><input type="number" id="m" value="0"/>
+            <p>C </p><input type="number" id="c" value="0"/>
+            <p>X0 </p><input type="number" id="X0" value="0"/>
+            <p>
+                <button class="btn" onclick=generateSequence()>generate</button>
+            </p>
+        </div>
+        <div id="output">
+            <p id = "periode"></p>
+            <div id="scrollTable">
+                <table id="resultTable"></table>
+            </div>
+        </div>
+    </div>
+</body>
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
 </html>

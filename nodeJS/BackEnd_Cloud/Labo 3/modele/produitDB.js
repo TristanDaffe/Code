@@ -1,3 +1,4 @@
+
 module.exports.getProduit = async (id, client) => {
     return await client.query("SELECT * FROM produit WHERE id = $1", [id]);
 }

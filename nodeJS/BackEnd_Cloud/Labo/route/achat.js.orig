@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+const AchatControleur = require("../controleur/achatDB");
+
+const Router = require("express-promise-router");
+const router = new Router;
+
+router.post('/', AchatControleur.insertAchat);
+
+=======
+const AchatControleur = require("../controleur/achatORM");
+
+const Router = require("express-promise-router");
+const router = new Router;
+
+router.post('/', AchatControleur.insertAchat);
+//router.post('/withClient', AchatControleur.insertAchatWithClient);
+
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
+module.exports = router;

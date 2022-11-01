@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+<%@ page pageEncoding="UTF-8"
+         contentType="text/html; charset=UTF-8"%>
+<%@ include file="include/importTags.jsp"%>
+
+<html>
+<head>
+</head>
+<body>
+
+<p>Congratulation ! ${gift}</p>
+
+</body>
+=======
+<%@ page pageEncoding="UTF-8"
+         contentType="text/html; charset=UTF-8"%>
+<%@ include file="include/importTags.jsp"%>
+
+<html>
+<head>
+</head>
+<body>
+
+<p>Congratulation ! ${gift}</p>
+
+</body>
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
+</html>

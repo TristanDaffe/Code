@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+const Router = require('./route');
+const express = require('express');
+const app = express();
+const port = 3001;
+
+app.use(express.json());
+app.use(Router);
+
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`);
+});
+=======
+const Router = require('./route');
+const express = require('express');
+const app = express();
+const port = 3001;
+
+app.use(express.json());
+app.use(Router);
+
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`);
+});
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3

@@ -25,3 +25,9 @@ module.exports.clientExist = async (client, idClient) => {
     );
     return rows[0].nbr > 0;
 }
+
+module.exports.getClient = async (client, nom, password) => {
+    return await client.query(`
+    SELECT * FROM client WHERE nom = $1 AND password = $2 LIMIT 1;
+    `, [nom, password]);
+}

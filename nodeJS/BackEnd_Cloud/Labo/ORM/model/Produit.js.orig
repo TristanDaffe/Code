@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+const {DataTypes} = require('sequelize');
+const sequelize = require('../sequelize');
+
+const Produit = sequelize.define('produit', {
+    id: {
+        type: DataTypes.INTEGER,
+        autoIncrementIdentity: true,
+        primaryKey: true,
+    },
+    nom: {
+        type: DataTypes.STRING
+    },
+    prix:{
+        type: DataTypes.FLOAT
+    }
+}, {
+    timestamps: false,
+    freezeTableName: true
+});
+
+=======
+const {DataTypes} = require('sequelize');
+const sequelize = require('../sequelize');
+
+const Produit = sequelize.define('produit', {
+    id: {
+        type: DataTypes.INTEGER,
+        autoIncrementIdentity: true,
+        primaryKey: true
+    },
+    nom: {
+        type: DataTypes.STRING
+    },
+    prix: {
+        type: DataTypes.FLOAT
+    },
+}, {
+    timestamps: false,
+    freezeTableName: true
+});
+
+>>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3
+module.exports = Produit;

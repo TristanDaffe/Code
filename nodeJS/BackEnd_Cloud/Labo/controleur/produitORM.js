@@ -1,7 +1,8 @@
 const ProduitORM = require('../ORM/model/Produit');
 
 module.exports.getProduit = async (req, res) => {
-    const idTexte = req.params.id; //attention ! Il s'agit de texte !
+
+        const idTexte = req.params.id; //attention ! Il s'agit de texte !
     const id = parseInt(idTexte);
     try{
         if(isNaN(id)){

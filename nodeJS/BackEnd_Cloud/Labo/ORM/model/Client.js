@@ -21,4 +21,10 @@ const Client = sequelize.define('client', {
     freezeTableName: true
 });
 
+module.exports.getClient = async (client, nom, password) => {
+	return await client.query(`
+		SELECT * FROM client WHERE nom = $1 AND password = $2 LIMIT 1;
+	`, [nom, password]);
+}
+
 module.exports = Client;
