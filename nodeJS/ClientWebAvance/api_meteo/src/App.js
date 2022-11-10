@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <Routes />
-      <p>{(API_URL('Namur', API_KEY).search)}</p>
     </div>
   );
 }

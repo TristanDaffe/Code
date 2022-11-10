@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const ClientDB = require('../modele/clientDB');
 const ManagerDB = require('../modele/managerDB');
 const pool = require('../modele/database');
@@ -64,29 +63,3 @@ module.exports.identificationWithAuth = async (req, res, next) => {
         res.sendStatus(401);
     }
 }
-=======
-const ClientDB = require('../modele/clientDB');
-const pool = require('../modele/database');
-
-module.exports.identification = async (req, res, next) => {    
-    const headerAuth = req.get('authorization');
-    if(headerAuth && headerAuth.includes('basic')) {
-
-    }
-    // try{
-    //     const headerClear = Buffer.from(headerBase64, 'base64').toString('utf-8');
-    //     if(headerClear !== undefined){
-    //         const client = await pool.connect();
-    //         const [nom, password] = headerClear.split(':');
-            
-    //         const clientDB = await ClientDB.getClient(client , nom, password);
-    //         if(clientDB.rowCount > 0){
-    //             //client connecté
-    //         }
-    //     }
-    // }      
-    // catch{
-    //     res.sendStatus();
-    // }
-}
->>>>>>> 7e58a8d848b1bf28cb4b4c537980293368f92ec3

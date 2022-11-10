@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "Labo2bis", "Labo2bis\Labo2bis.dtproj", "{7CDB36DE-DDC4-4B14-8FEF-2FE6B6D77F9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CDB36DE-DDC4-4B14-8FEF-2FE6B6D77F9D}.Development|Default.ActiveCfg = Development
+		{7CDB36DE-DDC4-4B14-8FEF-2FE6B6D77F9D}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D21EEF30-07D7-471E-869B-27399C50A18D}
+	EndGlobalSection
+EndGlobal
