@@ -11,8 +11,8 @@
   DTS:LocaleID="2060"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{392E73F4-6FB8-4DFB-B3D7-62F398D05CED}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{654A993B-BF8A-4648-B4EE-E37D07F5C9B0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -151,7 +151,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcW0HBsQHBEWDAc+UWn5V3AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACX/efBLJcasIjdg1+9cXSKWQeUAFY7+R8aTLX3CkLfXgAAAAAOgAAAAAIAACAAAAAQE4gr+T0TjQ6UqnJAMgel9B9O49gUvIrah4HHw/PLmiAAAAD5J25D2wAnYfybpIea3xR0nWnbwYsdixAaFYiXP1RKFUAAAAABtmtdwABOF0DKQCg/xjgruugP+BDB6P9e/aBUZWBMFysv4kfxtX/SY1uRP1z9OKiuWBzpk9xIM+XhjZNTLXNk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcW0HBsQHBEWDAc+UWn5V3AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABR8B+AtcJ20KCmzD/DgNnlGFOAk26Ksw3eRjNKiyZV3AAAAAAOgAAAAAIAACAAAAAAgSPUo0s2ymq50yv+Pwno62LzXtyTBai0/8bA2HRKVSAAAAAxi+tSzKbCOBWcaxHFe+umrpnwXBDot+jbqa/Djtz8HEAAAABDFVxgipXGsvKCAPPQ1oE4S6sFzg2leHtfvo06EAROMM+qJKQMPRBGb1/bSC5mDVOwcjoe0pHe6Tch4w7XaGDF</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -743,6 +743,10 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Tâche de flux de données\DimDate"
+          TopLeft="180.833326147663,331.266668739849" />
+        <NodeLayout
           Size="176,41.6"
           Id="Package\Tâche de flux de données\Source du fichier plat"
           TopLeft="170.833326545027,140.400001115799" />
@@ -750,10 +754,6 @@
           Size="162.4,41.6"
           Id="Package\Tâche de flux de données\dates convertie"
           TopLeft="183.333326048322,235.733335206774" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Tâche de flux de données\DimDate"
-          TopLeft="180.833326147663,331.266668739849" />
         <EdgeLayout
           Id="Package\Tâche de flux de données.Paths[Sortie de source de fichier plat]"
           TopLeft="261.683326296674,182.000001115799">

@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema%22%3E
+<BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Labo2</Name>
-    <LastWriteTime>2022-11-03T17:27:08.8889291Z</LastWriteTime>
+    <LastWriteTime>2022-11-11T10:47:47.1322704Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Package.dtsx</Name>
-      <LastWriteTime>2022-11-03T17:33:26.2634988Z</LastWriteTime>
+      <LastWriteTime>2022-11-11T10:50:22.9052741Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
