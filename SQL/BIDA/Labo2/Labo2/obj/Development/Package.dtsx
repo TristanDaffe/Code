@@ -11,8 +11,8 @@
   DTS:LocaleID="2060"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{654A993B-BF8A-4648-B4EE-E37D07F5C9B0}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{F8C9D859-46A3-4372-9B65-18CE7421EB38}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -151,7 +151,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcW0HBsQHBEWDAc+UWn5V3AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABR8B+AtcJ20KCmzD/DgNnlGFOAk26Ksw3eRjNKiyZV3AAAAAAOgAAAAAIAACAAAAAAgSPUo0s2ymq50yv+Pwno62LzXtyTBai0/8bA2HRKVSAAAAAxi+tSzKbCOBWcaxHFe+umrpnwXBDot+jbqa/Djtz8HEAAAABDFVxgipXGsvKCAPPQ1oE4S6sFzg2leHtfvo06EAROMM+qJKQMPRBGb1/bSC5mDVOwcjoe0pHe6Tch4w7XaGDF</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcW0HBsQHBEWDAc+UWn5V3AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAaMwju8KCl2Mh4i0e3xONmby3SygMR2ti5WZLp6csJnwAAAAAOgAAAAAIAACAAAAAXz0kAQyLfWRszzxXBVj7v1qR5iNhtJBMjHfh41MvikCAAAACnPTvi4yjQCsysOjD2iGzXLd1agno9oteVUXQaW0fXO0AAAADktYk27s7gv11kHY2az+ViodjNUX9pkTZ3buseiOyk9gkeJjbZRNCmYwkKP4seAIzSZqpkMR/fG0PTIv7qJjuH</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -489,7 +489,7 @@
                 <input
                   refId="Package\Tâche de flux de données\DimDate.Inputs[Entrée de destination OLE DB]"
                   errorOrTruncationOperation="Insérer"
-                  errorRowDisposition="FailComponent"
+                  errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="Entrée de destination OLE DB">
                   <inputColumns>

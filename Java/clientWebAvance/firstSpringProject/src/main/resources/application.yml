@@ -2,3 +2,8 @@ server:
   port: 8082
   servlet:
     contextPath: /firstSpring
+spring:
+  datasource:
+    password: password
+    url: jdbc:mysql://localhost:3306/childdb?user=root
+    driverClassName: com.mysql.cj.jdbc.Driver

@@ -12,4 +12,5 @@ public class MagicKeyForm {
     public void setMagicKey(String magicKey) {
         this.magicKey = magicKey;
     }
+
 }
