@@ -7,5 +7,5 @@ app.use(express.json());
 app.use(Router);
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port} ${process.env.DB_USER}`);
+    console.log(`Example app listening at http://localhost:${port}`);
 });

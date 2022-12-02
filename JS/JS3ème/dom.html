@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrousel</title>
+    <style>
+        img {
+            height: 200px;
+            width: 300px;
+        }
+        .imageCachee {
+            display: none;
+        }
+    </style>
+
+    <script>
+        let images;
+        let isTurning;
+
+        window.onload = init;
+
+        function init() {
+            const nbPhotos = Number(prompt("Entrez le nombre de photos (entre 1 et 8)"));
+            const divImages = document.getElementById("divCarrousel");
+
+            for(let i = 0; i < nbPhotos; i++){
+                const numPhoto = (Math.round(Math.random() * 5) +1);
+                divImages.innerHTML += `<img class='imageCachee' src='chat${numPhoto}.jpg'/>`;
+            }
+
+            images = document.getElementsByTagName("img");
+            document.getElementById('btnStart').addEventListener("click", StartCarrousel);
+            document.getElementById('btnStop').addEventListener("click", stop);
+            document.getElementById('btnPrecedent').addEventListener("click", affichePrec);
+            document.getElementById('btnSuivant').addEventListener("click", afficheSuiv);
+        }
+        function toggleImage(elem){
+            elem.classList.toggle("imageCachee");
+        }
+        function iImageVisible(){
+            let iVisible = 0;
+            while(iVisible < images.length && images[iVisible].classList.contains("imageCachee")){
+                iVisible++;
+            }
+            if(iVisible < images.length)
+                return iVisible;
+            else
+                return -1;
+        }
+
+        function avanceCarrousel(i){
+            if(isTurning){
+                // cache l'image courante
+                toggleImage(images[i]);
+
+                if(i === images.length -1)
+                    i = 0;
+                else
+                    i++;
+
+                // affiche l'image suivante
+                toggleImage(images[i]);
+                setTimeout(avanceCarrousel, 2500, i);
+            }
+        }
+        function StartCarrousel() {
+            if(!isTurning){
+                isTurning = true;
+                let iVisible = iImageVisible();
+
+                if(iVisible === -1){
+                    iVisible = 0;
+                    toggleImage(images[iVisible]);
+                }
+
+                setTimeout(avanceCarrousel, 2500, iVisible);
+            }
+        }
+
+        function stop(){
+            isTurning = false;
+        }
+
+        function affichePrec(){
+            if(!isTurning){
+                let iVisible = iImageVisible();
+                if(iVisible === -1)
+                    iVisible = 0;
+                else
+                    toggleImage(images[iVisible]);
+
+                iVisible--;
+                if(iVisible < 0)
+                    iVisible = images.length - 1;
+                toggleImage(images[iVisible]);
+            }
+        }
+
+
+        function afficheSuiv(){
+            if(!isTurning){
+                let iVisible = iImageVisible();
+                if(iVisible === -1)
+                    iVisible = 0;
+                else
+                    toggleImage(images[iVisible]);
+                
+                iVisible++;
+                if(iVisible >= images.length)
+                    iVisible = 0;
+                toggleImage(images[iVisible]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="divCarrousel"></div>
+    <button id="btnPrecedent">Précédent</button>
+    <button id="btnSuivant">Suivant</button>
+    <button id="btnStop">Stop</button>
+    <button id="btnStart">Démarrer</button>
+</body>
+</html>

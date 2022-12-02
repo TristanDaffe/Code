@@ -1,0 +1,26 @@
+html, body, #root {
+  font: 0.9rem sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  height: 100%;
+}
+
+.doubleSearchBox {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.searchBox {
+  flex: 0 0 50%;
+}
+
+.flex_vertically {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

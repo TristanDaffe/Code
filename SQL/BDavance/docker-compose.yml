@@ -1,0 +1,30 @@
+services:
+  rs1:
+    image: mongo
+    ports:
+    - "27017:27017"
+    expose:
+      - "27017"
+    networks:
+      - net
+    entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet","myFirstReplicaSet"]
+  rs2:
+    image: mongo
+    ports:
+      - "27018:27017"
+    expose:
+      - "27018"
+    networks:
+      - net
+    entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet","myFirstReplicaSet"]
+  rs3:
+    image: mongo
+    ports:
+      - "27019:27017"
+    expose:
+      - "27019"
+    networks:
+      - net
+    entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet","myFirstReplicaSet"]
+networks:
+  net: {}

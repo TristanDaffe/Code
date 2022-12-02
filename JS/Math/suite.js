@@ -36,7 +36,7 @@ function createTalbe(array, id){
     let output = "";
 
     output += '<div class="scrollTable">';
-    output += `<table id="${id}">`;
+    output += `<table id="${id}" >`;
     // génère les titres des colonnes via les clés des éléments du tableau
     output += generateTopRow(array[0]);
 
@@ -178,6 +178,11 @@ function testSeries(){
         let index = serie.findIndex(x => x["Xi,Xi+1"] === binome);
         serie[index]["Ri"]++;
     }
+    serie.forEach(x => {
+        x["nPi"] = x["Pi"] * suite.length;
+        x["(nPi - Ri)² / nPi"] = Math.pow(x["nPi"] - x["Ri"], 2) / x["nPi"];
+    });
+
     serie = serie.filter(x => x["Ri"] !== 0);
 
     validityTest.innerHTML = "Test des séries : ";
@@ -188,7 +193,7 @@ function testSauts(){
     let sauts = [];
 
     // calcul du nombre max de ligne (pour n * pi => 5)
-    let nbLignes = (Math.log(5 / suite.length) / Math.log(0.9)); 
+    let nbLignes = Math.ceil((Math.log(5 / suite.length) / Math.log(0.9))); 
 
     let piTot = 0;
     let i;
@@ -225,12 +230,17 @@ function testSauts(){
                 sauts[jumpSize]["Ri"]++;
             }
             else{
-                sauts[nbLignes]["Ri"]++;
+                sauts[nbLignes-1]["Ri"]++;
             }
         }
 
         i++;
     }
+    sauts.forEach(x => {
+        x["nPi"] = x["Pi"] * suite.length;
+        x["(nPi - Ri)² / nPi"] = Math.pow(x["nPi"] - x["Ri"], 2) / x["nPi"];
+    });
+
     validityTest.innerHTML = "Test des Sauts : ";
     validityTest.innerHTML += createTalbe(sauts, "jumptable");
 }
@@ -241,9 +251,9 @@ function testCourse(){
     // prépare course pour compter la taille des courses
     for(let i = 1; i < suite.length; i++){
         course.push({
-            "Saut" : i,
+            "Course" : i,
             "Ri" : 0,
-            "Pi" : i / (i + 1),
+            "Pi" : 1 / (i + 1),
         });
     }
 
@@ -260,6 +270,10 @@ function testCourse(){
             i++;
         }
     }
+    course.forEach(x => {
+        x["nPi"] = x["Pi"] * suite.length;
+        x["(nPi - Ri)² / nPi"] = Math.pow(x["nPi"] - x["Ri"], 2) / x["nPi"];
+    });
     course = course.filter(x => x["Ri"] !== 0);
 
     validityTest.innerHTML = "Test de course : ";

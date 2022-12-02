@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+
+    <script>
+
+        function pretPourApprentissage (chien){
+            return chien.tours.every(tour => {
+                return "finApprentissage" in tour;
+            });
+        }
+
+        function majTours(tours, chien){
+            for(let tour of tours){
+                let iTour = chien.tours.findIndex(tourChien => tourChien.nom === tour.nom);
+
+                if(iTour !== -1){
+                    chien.tours[iTour].finApprentissage = tour.finApprentissage;
+                    chien.tours[iTour].friandisesRecues = tour.friandisesRecues;
+                }
+                else{
+                    chien.tours.push(tour);
+                }
+            }
+        }
+
+        function assezDeBonbonbs(chien){
+            let nbBonbons = 0;
+            for(let tour of chien.tours){
+                if("friandisesRecues" in tour){
+                    nbBonbons += tour.friandisesRecues;
+                }
+            }
+            return nbBonbons <= chien.friandisesPrevues;
+        }
+
+
+
+    function Chien(nom, dateDeNaissance, friandisesPrevues) {
+        this.nom = nom;
+        this.dateDeNaissance = dateDeNaissance;
+        this.friandisesPrevues = friandisesPrevues;
+        this.tours = [];
+    }
+    Chien.prototype.ajouteTour = function (nom, debutApprentissage, difficulte) {
+        this.tours.push({ nom, debutApprentissage, difficulte });
+    };
+    Chien.prototype.tourLePlusDifficile() = function (){
+        let tourDifficile = this.tours[0];
+        for(let tour of this.tours){
+            if(tour.difficulte > tourDifficile.difficulte){
+                tourDifficile = tour;
+            }
+        }
+        return tourDifficile;
+    }
+    
+    Chien.prototype.nomsTours = [];
+    Chien.prototype.ajouteTour = function (nom, debutApprentissage, difficulte) {
+        this.tours.push({ nom, debutApprentissage, difficulte });
+        
+        if(!this.nomsTours.includes(nom)){
+            this.nomsTours.push(nom);
+        }
+    };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

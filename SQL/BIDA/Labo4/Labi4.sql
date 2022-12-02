@@ -1,7 +1,8 @@
+USE master
 CREATE DATABASE [StackOverflow] ON
-(name= so1, FILENAME = N'/tmp/StackOverflow2010.mdf')
-LOG ON (FILENAME='/tmp/StackOverflow2010.ldf')
- FOR ATTACH;
+(FILENAME = N'/tmp/StackOverflow2010.mdf'),
+(FILENAME= N'/tmp/StackOverflow2010_log.ldf')
+FOR ATTACH;
 
 CREATE DATABASE Labo4;
 Use Labo4;

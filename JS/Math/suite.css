@@ -50,7 +50,7 @@ input{
     scrollbar-width: thin;
 }
 /* ligne des titres reste quand on scroll */
-#resultTable th {
+th {
     position: sticky; 
     top: 0; 
     z-index: 1;        

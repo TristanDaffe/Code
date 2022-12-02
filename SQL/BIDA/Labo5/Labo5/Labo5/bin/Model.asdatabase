@@ -1,0 +1,14 @@
+{
+  "name": "Labo5",
+  "compatibilityLevel": 1200,
+  "model": {
+    "name": "Modèle",
+    "culture": "fr-BE",
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  }
+}

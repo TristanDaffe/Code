@@ -1,0 +1,7 @@
+D:\TheStartOfEverything\cours\Git\Code\SQL\BIDA\Labo5\Labo5\Labo5\bin\Model.asdatabase
+D:\TheStartOfEverything\cours\Git\Code\SQL\BIDA\Labo5\Labo5\Labo5\bin\Model.deploymenttargets
+D:\TheStartOfEverything\cours\Git\Code\SQL\BIDA\Labo5\Labo5\Labo5\bin\Model.deploymentoptions
+D:\TheStartOfEverything\cours\Git\Code\SQL\BIDA\Labo5\Labo5\Labo5\obj\Development\Labo5.smproj.CoreCompileInputs.cache
+D:\TheStartOfEverything\cours\Git\Code\SQL\BIDA\Labo5\Labo5\Labo5\obj\Development\Model.asdatabase
+D:\TheStartOfEverything\cours\Git\Code\SQL\BIDA\Labo5\Labo5\Labo5\obj\Development\Model.deploymentoptions
+D:\TheStartOfEverything\cours\Git\Code\SQL\BIDA\Labo5\Labo5\Labo5\obj\Development\Model.deploymenttargets
